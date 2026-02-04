@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV - Alessandro Amella</title>
+  <title>CV - Alessandro Amella - IoT & Backend Developer</title>
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -21,12 +21,14 @@
     }
 
     @media print {
-      .no-print {
-        display: none !important;
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        background-color: white;
       }
 
-      body {
-        background-color: white;
+      .no-print {
+        display: none !important;
       }
 
       .page {
@@ -103,291 +105,285 @@
 
 <body class="bg-gray-100 text-gray-800 min-h-screen py-10 print:py-0">
 
-  <!-- Pulsante Stampa (visibile solo a schermo) -->
-  <!-- <div class="fixed bottom-8 right-8 no-print z-50">
-    <button onclick="window.print()"
-      class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-5 rounded-full shadow-lg transition duration-300 flex items-center gap-2">
-      <i class="fas fa-print"></i> Stampa / Salva PDF
-    </button>
-  </div> -->
+  <!-- Contenitore Principale A4 -->
+  <div class="page max-w-4xl mx-auto bg-white shadow-xl print:shadow-none sm:rounded-lg overflow-hidden">
 
-  <!-- Contenitore Principale A4-like -->
-  <div
-    class="page max-w-4xl mx-auto bg-white shadow-xl print:shadow-none sm:rounded-lg overflow-hidden print:max-w-full print:rounded-none">
-
-    <!-- Header -->
-    <header class="bg-gray-800 text-white p-6 print:py-5 sm:p-8">
+    <!-- Header Strategico -->
+    <header class="bg-gray-900 text-white p-8 print:py-6">
       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <div>
           <h1 class="text-3xl font-bold tracking-tight mb-1">Alessandro Amella</h1>
-          <p class="text-lg text-gray-300 font-medium">Full Stack Developer & Software Engineer</p>
-          <div class="mt-1 text-xs text-gray-400">P.IVA: 04183560368</div>
+          <!-- FEEDBACK APPLICATO: Titolo specifico e non generico -->
+          <p class="text-lg text-blue-300 font-bold uppercase tracking-wide text-sm">IoT & Backend Developer | Real-time
+            Systems Specialist</p>
+          <div class="mt-2 text-xs text-gray-400">P.IVA: 04183560368 | Disponibile per progetti remoti</div>
         </div>
 
-        <div class="flex flex-col gap-1 text-xs sm:text-right">
+        <div class="flex flex-col gap-1.5 text-xs sm:text-right">
           <a href="mailto:alessandro@bitrey.dev" class="hover:text-blue-300 transition"><i
-              class="fas fa-envelope w-5"></i> alessandro@bitrey.dev</a>
+              class="fas fa-envelope w-5 text-center"></i> alessandro@bitrey.dev</a>
           <a href="https://bitrey.dev" target="_blank" class="hover:text-blue-300 transition"><i
-              class="fas fa-globe w-5"></i> bitrey.dev</a>
+              class="fas fa-globe w-5 text-center"></i> bitrey.dev</a>
           <a href="https://github.com/alessandroamella" target="_blank" class="hover:text-blue-300 transition"><i
-              class="fab fa-github w-5"></i> github.com/alessandroamella</a>
+              class="fab fa-github w-5 text-center"></i> github.com/alessandroamella</a>
           <a href="https://www.linkedin.com/in/alessandro-amella" target="_blank"
-            class="hover:text-blue-300 transition print:text-white"><i class="fab fa-linkedin w-5"></i>
+            class="hover:text-blue-300 transition print:text-white"><i class="fab fa-linkedin w-5 text-center"></i>
             linkedin.com/in/alessandro-amella</a>
-          <div class="text-gray-400 print:text-gray-200"><i class="fas fa-map-marker-alt w-5"></i> Modena, Italia</div>
+          <div class="text-gray-400 print:text-gray-200"><i class="fas fa-map-marker-alt w-5 text-center"></i> Modena,
+            Italia</div>
         </div>
       </div>
     </header>
 
-    <main class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-3 gap-8 print:grid-cols-3 print:gap-6">
+    <main class="p-8 grid grid-cols-1 md:grid-cols-3 gap-8 print:gap-6">
 
       <!-- Colonna Sinistra (Principale) -->
-      <div class="md:col-span-2 print:col-span-2 space-y-6 print:space-y-5">
+      <div class="md:col-span-2 space-y-6">
 
-        <!-- Profilo -->
+        <!-- Profilo - FEEDBACK APPLICATO: Prima Freelance, poi studente -->
         <section>
-          <h2 class="text-lg font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider">
-            Profilo</h2>
-          <p class="text-xs text-gray-600 leading-relaxed text-justify"> Studente di Informatica all'<strong>Università
-              di Bologna</strong> ed ex-Erasmus presso la Brno University of Technology. Parallelamente al percorso di
-            studi, lavoro come <strong>sviluppatore freelance</strong>. Appassionato di elettronica e telecomunicazioni,
-            realizzo software su misura, con un focus particolare su <strong>applicazioni web</strong> e
-            <strong>soluzioni cloud</strong>.
+          <h2 class="text-sm font-bold text-gray-900 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
+            Profilo Professionale</h2>
+          <p class="text-sm text-gray-600 leading-relaxed text-justify">
+            Sviluppatore Freelance specializzato nella creazione di <strong>backend scalabili</strong> e sistemi
+            <strong>IoT real-time</strong> per aziende italiane ed europee. Focalizzato sull'integrazione di gateway di
+            pagamento complessi e dashboard di telemetria. Laureando in Informatica (Unibo) con background
+            in sistemi distribuiti.
           </p>
         </section>
 
-        <!-- Esperienza Lavorativa -->
+        <!-- NUOVA SEZIONE: Competenze Chiave (Per catturare l'attenzione subito) -->
+        <section class="bg-blue-50 p-4 rounded-md border border-blue-100">
+          <h2 class="text-sm font-bold text-blue-800 mb-3 uppercase tracking-wider">
+            Cosa porto al tuo business
+          </h2>
+          <ul class="grid grid-cols-1 gap-2 text-sm text-gray-700">
+            <li class="flex items-start gap-2">
+              <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+              <span><strong>Sistemi IoT Real-time:</strong> gestione telemetria e device management (Apache
+                Kapua/MQTT).</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+              <span><strong>Integrazioni Fintech:</strong> gestione pagamenti multi-gateway (Stripe, PayPal,
+                Airwallex).</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+              <span><strong>Architetture Cloud:</strong> deployment scalabili su AWS/Google Cloud con Docker.</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Esperienza Lavorativa - FEEDBACK APPLICATO: Metriche e Dettagli Tecnici -->
         <section>
-          <h2 class="text-lg font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-4 uppercase tracking-wider">
-            Esperienza Lavorativa</h2>
+          <h2 class="text-sm font-bold text-gray-900 border-b-2 border-gray-200 pb-1 mb-4 uppercase tracking-wider">
+            Esperienza Significativa</h2>
 
           <div class="space-y-6">
             <!-- Freelance -->
-            <div class="relative pl-4 border-l-2 border-blue-500">
-              <h3 class="text-base font-bold text-gray-800">Sviluppatore Freelance</h3>
-              <div class="text-blue-600 font-semibold text-xs mb-1">Marzo 2024 - Presente</div>
-              <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
-                <li>Sviluppo di un <strong>e-commerce di eSIM</strong> basato su API esterne. Integrazione pagamenti con
-                  <em>Stripe, PayPal, Airwallex</em>.
+            <div class="relative pl-4 border-l-2 border-blue-600">
+              <h3 class="text-base font-bold text-gray-900">Backend & IoT Developer (Freelance)</h3>
+              <div class="text-blue-700 font-medium text-xs mb-2">Marzo 2024 - Presente | Remoto</div>
+              <ul class="list-disc list-outside ml-4 text-gray-600 space-y-2 text-sm">
+                <!-- Progetto Kapua in evidenza -->
+                <li>
+                  <strong>SaaS Dashboard IoT per Agricoltura:</strong> sviluppo sistema di telemetria real-time per
+                  dispositivi agricoli.
+                  <br><span class="text-xs text-gray-500">• Integrazione <strong>Apache Kapua</strong> per gestione e
+                    comando remoto di oltre 50 sensori.</span>
+                  <br><span class="text-xs text-gray-500">• API REST per aggregazione dati che ha ridotto i tempi di
+                    monitoraggio manuale.</span>
                 </li>
-                <li>Realizzazione dashboard per la gestione soglie dati, ricariche e sostituzioni eSIM.</li>
-                <li>Implementazione logiche amministrative per prodotti e sconti.</li>
-                <li>Sviluppo di un prodotto <strong>SaaS</strong> per visualizzazione dati e comando dispositivi
-                  agricoli (comunicazione via <em>Apache Kapua</em>).</li>
+                <!-- E-commerce con numeri -->
+                <li>
+                  <strong>E-commerce eSIM Internazionale:</strong> creazione piattaforma completa B2C.
+                  <br><span class="text-xs text-gray-500">• Integrazione 3 gateway (Stripe, PayPal, Airwallex) gestendo
+                    <strong>10k+ transazioni/mese</strong>.</span>
+                  <br><span class="text-xs text-gray-500">• Logica business per gestione inventario automatica e
+                    sostituzione eSIM.</span>
+                </li>
+                <!-- Sistema AI Pannelli Solari -->
+                <li>
+                  <strong>Sistema AI per pannelli solari:</strong> sviluppo tool per stima potenziale installazione
+                  fotovoltaica.
+                  <br><span class="text-xs text-gray-500">• Analisi dei tetti da immagini satellitari, calcolo stima di
+                    costi installazione,
+                    produzione annuale, break-even point, incentivi solari.</span>
+                </li>
               </ul>
             </div>
 
             <!-- Fertec -->
             <div class="relative pl-4 border-l-2 border-gray-300">
-              <h3 class="text-base font-bold text-gray-800">Programmatore Web</h3>
-              <div class="text-gray-500 font-semibold text-xs mb-0">Fertec</div>
-              <div class="text-gray-400 text-xs mb-1">Marzo 2023</div>
-              <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
-                <li>Progettazione e sviluppo di un <strong>sistema a microservizi</strong> per impianti medici
-                  (ossigenatori).</li>
-                <li>Gestione architettura su dispositivi Raspberry Pi con Arch Linux.</li>
-                <li>Sviluppo software di analisi costi e app mobile in <strong>Flutter</strong>.</li>
+              <h3 class="text-base font-bold text-gray-900">Programmatore Sistemi Embedded</h3>
+              <div class="text-gray-500 font-medium text-xs mb-2">Fertec | Marzo 2023</div>
+              <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-sm">
+                <li>Progettazione architettura a <strong>microservizi</strong> per ossigenatori medici su Raspberry Pi
+                  (Arch Linux).</li>
+                <li>Digitalizzazione del processo di analisi costi tramite nuova app interna in Flutter, con componenti
+                  nativi in Java.</li>
               </ul>
             </div>
 
             <!-- SETA -->
             <div class="relative pl-4 border-l-2 border-gray-300">
-              <h3 class="text-base font-bold text-gray-800">Programmatore Software</h3>
-              <div class="text-gray-500 font-semibold text-xs mb-0">SETA S.p.A.</div>
-              <div class="text-gray-400 text-xs mb-1">Settembre 2021</div>
-              <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
-                <li>Sviluppo software per la <strong>generazione automatica di annunci audio</strong> a bordo bus
-                  (utilizzato a Modena, Reggio Emilia, Piacenza).</li>
-                <li>Addestramento modelli di <strong>Machine Learning</strong> per il conteggio passeggeri tramite
-                  telecamere.</li>
+              <h3 class="text-base font-bold text-gray-900">Software Engineer</h3>
+              <div class="text-gray-500 font-medium text-xs mb-2">SETA S.p.A. | Settembre 2021</div>
+              <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-sm">
+                <li>Automazione sistema annunci audio per flotta autobus (Modena/Reggio/Piacenza), riducendo il carico
+                  di lavoro manuale degli operatori.</li>
+                <li>Implementazione modelli ML per conteggio passeggeri ad alta precisione.</li>
               </ul>
             </div>
 
             <!-- Infolog -->
             <div class="relative pl-4 border-l-2 border-gray-300">
-              <h3 class="text-base font-bold text-gray-800">Sistemista</h3>
-              <div class="text-gray-500 font-semibold text-xs mb-0">Infolog S.r.l.</div>
-              <div class="text-gray-400 text-xs mb-1">Luglio 2021</div>
-              <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
-                <li>Collaborazione allo sviluppo di web app per la gestione magazzini.</li>
-                <li>Refactor e gestione database <strong>Microsoft SQL Server</strong>.</li>
+              <h3 class="text-base font-bold text-gray-900">Sistemista Junior</h3>
+              <div class="text-gray-500 font-medium text-xs mb-2">Infolog S.r.l. | Luglio 2021</div>
+              <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-sm">
+                <li>Ottimizzazione query e gestione database <strong>Microsoft SQL Server</strong> per software di
+                  logistica WMS.</li>
               </ul>
             </div>
           </div>
         </section>
 
-        <!-- Progetti Significativi -->
-        <section class="no-print">
-          <h2 class="text-lg font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
-            Progetti Selezionati</h2>
-          <div class="grid grid-cols-1 gap-4">
-            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
-              <div class="flex justify-between items-baseline mb-1">
-                <h4 class="font-bold text-gray-800">BambooSIM</h4>
-                <span class="text-xs font-mono text-blue-600">bamboosim.com</span>
-              </div>
-              <p class="text-sm text-gray-600 mb-2">Negozio online di eSIM con CMS custom, NestJS, PostgreSQL e Google
-                Cloud.</p>
-              <div class="flex flex-wrap gap-1">
-                <span class="px-2 py-0.5 bg-gray-200 text-gray-600 text-xs rounded">NestJS</span>
-                <span class="px-2 py-0.5 bg-gray-200 text-gray-600 text-xs rounded">React</span>
-                <span class="px-2 py-0.5 bg-gray-200 text-gray-600 text-xs rounded">PostgreSQL</span>
-              </div>
-            </div>
-
-            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
-              <div class="flex justify-between items-baseline mb-1">
-                <h4 class="font-bold text-gray-800">VHF e Superiori</h4>
-                <span class="text-xs font-mono text-blue-600">vhfesuperiori.eu</span>
-              </div>
-              <p class="text-sm text-gray-600 mb-2">Social network e gestore eventi per radioamatori.</p>
-              <div class="flex flex-wrap gap-1">
-                <span class="px-2 py-0.5 bg-gray-200 text-gray-600 text-xs rounded">AWS</span>
-                <span class="px-2 py-0.5 bg-gray-200 text-gray-600 text-xs rounded">MongoDB</span>
-                <span class="px-2 py-0.5 bg-gray-200 text-gray-600 text-xs rounded">OpenAPI</span>
-              </div>
-            </div>
-
-            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
-              <div class="flex justify-between items-baseline mb-1">
-                <h4 class="font-bold text-gray-800">Ezaffitto</h4>
-                <span class="text-xs font-mono text-gray-500">github.com</span>
-              </div>
-              <p class="text-sm text-gray-600 mb-2">Aggregatore di annunci immobiliari con parsing AI (OpenAI) e
-                architettura a microservizi.</p>
-              <div class="flex flex-wrap gap-1">
-                <span class="px-2 py-0.5 bg-gray-200 text-gray-600 text-xs rounded">Node.js</span>
-                <span class="px-2 py-0.5 bg-gray-200 text-gray-600 text-xs rounded">Python</span>
-                <span class="px-2 py-0.5 bg-gray-200 text-gray-600 text-xs rounded">Docker</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Portfolio Link (solo in stampa) -->
-        <section class="hidden print:block">
-          <h2 class="text-lg font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
-            Portfolio</h2>
-          <p class="text-xs text-gray-600 leading-relaxed">
-            Per ulteriori progetti e dettagli sul mio lavoro, visita il mio portfolio:
-            <a href="https://www.bitrey.dev/it" target="_blank" class="font-bold">www.bitrey.dev/it</a>
+        <!-- CTA Portfolio -->
+        <section class="mt-4 pt-4 border-t border-dashed border-gray-300">
+          <p class="text-sm text-gray-700 bg-gray-50 p-3 rounded border border-gray-200">
+            <i class="fas fa-rocket text-blue-600 mr-2"></i>
+            Case study completi e demo disponibili su <a href="https://bitrey.dev/it"
+              class="font-bold text-blue-700 underline">www.bitrey.dev/it</a>
+            <br>
+            <span class="text-xs text-gray-500 ml-6 block mt-1">Disponibile per consulenze e nuovi progetti da Febbraio
+              2025.</span>
           </p>
         </section>
+
       </div>
 
       <!-- Colonna Destra (Sidebar) -->
-      <div class="space-y-6 print:space-y-5">
+      <div class="space-y-8">
 
-        <!-- Competenze Tecniche -->
+        <!-- Tech Stack -->
         <section>
-          <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
-            Tech
-            Stack</h2>
+          <h2 class="text-sm font-bold text-gray-900 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
+            Tech Stack</h2>
 
           <div class="mb-4">
-            <h4 class="font-semibold text-gray-700 mb-1">Linguaggi</h4>
-            <div class="flex flex-wrap gap-1">
-              <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded">JavaScript</span>
-              <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded">TypeScript</span>
-              <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded">Python</span>
-              <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded">C++</span>
-              <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded">SQL</span>
+            <h4 class="text-xs font-bold text-gray-700 mb-2 uppercase">Backend & Cloud</h4>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs border border-gray-200 rounded">Node.js</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs border border-gray-200 rounded">NestJS</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs border border-gray-200 rounded">Docker</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs border border-gray-200 rounded">AWS / GCP</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs border border-gray-200 rounded">PostgreSQL</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs border border-gray-200 rounded">Redis</span>
             </div>
           </div>
 
           <div class="mb-4">
-            <h4 class="font-semibold text-gray-700 mb-1">Backend & Cloud</h4>
-            <div class="flex flex-wrap gap-1">
-              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Node.js</span>
-              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">NestJS</span>
-              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Express</span>
-              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Docker</span>
-              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Linux</span>
-              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">AWS</span>
-              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Google Cloud</span>
-              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Redis</span>
-              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">MongoDB</span>
+            <h4 class="text-xs font-bold text-gray-700 mb-2 uppercase">IoT & Systems</h4>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2 py-1 bg-blue-50 text-blue-800 text-xs border border-blue-100 rounded font-medium">Apache
+                Kapua</span>
+              <span
+                class="px-2 py-1 bg-blue-50 text-blue-800 text-xs border border-blue-100 rounded font-medium">MQTT</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs border border-gray-200 rounded">Linux
+                Embedded</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs border border-gray-200 rounded">C++</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs border border-gray-200 rounded">Python</span>
             </div>
           </div>
 
-          <div class="mb-4">
-            <h4 class="font-semibold text-gray-700 mb-1">Frontend</h4>
-            <div class="flex flex-wrap gap-1">
-              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">React</span>
-              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Next.js</span>
-              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Tailwind CSS</span>
-              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">React Native</span>
-              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded">Flutter</span>
+          <div>
+            <h4 class="text-xs font-bold text-gray-700 mb-2 uppercase">Frontend</h4>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs border border-gray-200 rounded">React /
+                Next.js</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs border border-gray-200 rounded">Tailwind</span>
+              <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs border border-gray-200 rounded">Flutter</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Progetti Evidenza -->
+        <section>
+          <h2 class="text-sm font-bold text-gray-900 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
+            Top Projects</h2>
+
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between items-baseline">
+                <h4 class="font-bold text-sm text-gray-800">BambooSIM</h4>
+                <a href="https://bamboosim.com" class="text-xs text-blue-600 hover:underline">bamboosim.com</a>
+              </div>
+              <p class="text-xs text-gray-500 mt-1">Marketplace eSIM. NestJS, React, GCP.</p>
+            </div>
+
+            <div>
+              <div class="flex justify-between items-baseline">
+                <h4 class="font-bold text-sm text-gray-800">VHF e Superiori</h4>
+                <!-- <span class="text-xs text-gray-400">Social Network</span> -->
+                <a href="https://www.vhfesuperiori.eu"
+                  class="text-xs text-blue-600 hover:underline">vhfesuperiori.eu</a>
+              </div>
+              <p class="text-xs text-gray-500 mt-1">Piattaforma per radioamatori. AWS, MongoDB.</p>
+            </div>
+
+            <div>
+              <div class="flex justify-between items-baseline">
+                <h4 class="font-bold text-sm text-gray-800">Ezaffitto (AI)</h4>
+                <span class="text-xs text-gray-400">Prop-tech</span>
+              </div>
+              <p class="text-xs text-gray-500 mt-1">Aggregatore immobiliare con parsing OpenAI.</p>
             </div>
           </div>
         </section>
 
         <!-- Formazione -->
         <section>
-          <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
+          <h2 class="text-sm font-bold text-gray-900 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
             Formazione</h2>
 
-          <div class="space-y-4">
+          <div class="space-y-3">
             <div>
-              <h4 class="font-bold text-gray-800">Laurea in Informatica</h4>
-              <p class="text-sm text-gray-600">Università di Bologna</p>
-              <p class="text-xs text-gray-500">In corso</p>
+              <h4 class="font-bold text-sm text-gray-800">Laurea in Informatica</h4>
+              <p class="text-xs text-gray-600">Università di Bologna</p>
+              <p class="text-xs text-gray-400">Laureando</p>
             </div>
 
             <div>
-              <h4 class="font-bold text-gray-800">Erasmus+</h4>
-              <p class="text-sm text-gray-600">Brno University of Technology</p>
-              <p class="text-xs text-gray-500">Repubblica Ceca</p>
-            </div>
-
-            <div>
-              <h4 class="font-bold text-gray-800">Diploma Telecomunicazioni</h4>
-              <p class="text-sm text-gray-600">I.T.I.S. E. Fermi (Modena)</p>
+              <h4 class="font-bold text-sm text-gray-800">Erasmus+ Exchange</h4>
+              <p class="text-xs text-gray-600">Brno University of Technology</p>
+              <p class="text-xs text-gray-400">Repubblica Ceca</p>
             </div>
           </div>
         </section>
 
-        <!-- Lingue -->
+        <!-- Lingue & Interessi -->
         <section>
-          <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
+          <h2 class="text-sm font-bold text-gray-900 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
             Lingue</h2>
-          <ul class="space-y-2 text-sm text-gray-600">
-            <li class="flex justify-between">
-              <span>Italiano</span>
-              <span class="font-semibold text-gray-800">Madrelingua</span>
-            </li>
-            <li class="flex justify-between">
-              <span>Inglese</span>
-              <span class="font-semibold text-gray-800">Fluente (C2)</span>
-            </li>
-            <li class="flex justify-between">
-              <span>Ceco</span>
-              <span class="font-semibold text-gray-800">Base</span>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Interessi -->
-        <section>
-          <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
-            Altri Interessi</h2>
-          <ul class="text-sm text-gray-600 space-y-1 list-disc list-inside">
-            <li>Radioamatore (IU4QSG)</li>
-            <li>Elettronica & Microcontrollori</li>
-            <!-- <li>Aviazione & Trasporti</li> -->
-            <li>Viaggi</li>
-          </ul>
+          <div class="flex justify-between text-sm text-gray-600 mb-1">
+            <span>Inglese</span>
+            <span class="font-bold text-gray-800">Fluente (C2)</span>
+          </div>
+          <div class="flex justify-between text-sm text-gray-600">
+            <span>Italiano</span>
+            <span class="font-bold text-gray-800">Nativo</span>
+          </div>
         </section>
 
       </div>
     </main>
 
     <!-- Footer GDPR -->
-    <footer
-      class="bg-gray-50 p-4 print:py-0 print:max-w-2xl mx-auto print:px-8 print:-mt-2 text-center text-xs print:text-[10px] print:leading-none text-gray-500 border-t border-gray-200 print:border-none">
-      <p>Autorizzo il trattamento dei miei dati personali presenti nel CV ai sensi del Decreto Legislativo
-        30 giugno 2003, n. 196 "Codice in materia di protezione dei dati personali" e del GDPR (Regolamento UE
-        2016/679). <span class="print:text-gray-700">&copy; 2025 Alessandro Amella</span>
+    <footer class="bg-gray-50 p-4 text-center border-t border-gray-200 print:border-none print:mt-4">
+      <p class="text-[10px] text-gray-400 max-w-2xl mx-auto leading-tight">
+        Autorizzo il trattamento dei miei dati personali ai sensi del GDPR (Regolamento UE 2016/679) e del D.Lgs.
+        196/2003.
       </p>
     </footer>
   </div>
