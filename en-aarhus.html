@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Alessandro Amella</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+
+      body {
+        background-color: white;
+      }
+
+      .page {
+        box-shadow: none;
+        margin: 0;
+        width: 100%;
+        page-break-after: auto;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+        padding: 0;
+      }
+
+      section {
+        page-break-inside: avoid;
+      }
+
+      section {
+        margin-bottom: 0.75rem;
+      }
+
+      header {
+        page-break-after: avoid;
+      }
+
+      footer {
+        page-break-before: avoid;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      header {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      a {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      span {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      @page {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      @page :first {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800 min-h-screen py-10 print:py-0">
+
+  <div
+    class="page max-w-4xl mx-auto bg-white shadow-xl print:shadow-none sm:rounded-lg overflow-hidden print:max-w-full print:rounded-none">
+
+    <header class="bg-gray-800 text-white p-6 print:py-5 sm:p-8">
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+        <div class="flex items-center gap-4">
+          <img src="profile-pic.jpg" alt="Alessandro Amella" class="w-24 h-24 rounded-full object-cover flex-shrink-0">
+          <div>
+            <h1 class="text-3xl font-bold tracking-tight mb-1">Alessandro Amella</h1>
+            <p class="text-lg text-gray-300 font-medium">Full-Stack Developer</p>
+            <div class="mt-1 text-xs text-gray-300">Portfolio: <a href="https://amella.it" target="_blank"
+                class="font-semibold hover:text-blue-300 transition">www.amella.it</a> · VAT (Italian):
+              <strong>04183560368</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-1 text-xs sm:text-right">
+          <a href="mailto:alessandro@amella.it" class="hover:text-blue-300 transition"><i
+              class="fas fa-envelope w-5"></i> alessandro@amella.it</a>
+          <a href="https://github.com/alessandroamella" target="_blank" class="hover:text-blue-300 transition"><i
+              class="fab fa-github w-5"></i> github.com/alessandroamella</a>
+          <a href="https://www.linkedin.com/in/alessandro-amella" target="_blank"
+            class="hover:text-blue-300 transition print:text-white"><i class="fab fa-linkedin w-5"></i>
+            linkedin.com/in/alessandro-amella</a>
+          <div class="text-gray-400 print:text-gray-200"><i class="fas fa-map-marker-alt w-5"></i> Modena, Italy</div>
+        </div>
+      </div>
+    </header>
+
+    <main class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-3 gap-8 print:grid-cols-3 print:gap-6">
+
+      <div class="md:col-span-2 print:col-span-2 space-y-6 print:space-y-5">
+
+        <section>
+          <h2 class="text-lg font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider">
+            Profile</h2>
+          <p class="text-xs text-gray-600 leading-relaxed text-justify">
+            Freelance full-stack developer. I specialize in custom software development,
+            with a focus on web applications, backend development, and AI system integration. Computer Science
+            graduate
+            from the University of Bologna, with international experience at the Brno University of Technology.
+            Passionate about technology, telecommunications, and electronics, I strive to combine technical skills
+            and creativity to build innovative and functional solutions.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-4 uppercase tracking-wider">
+            Work Experience</h2>
+
+          <div class="space-y-6">
+            <div class="relative pl-4 border-l-2 border-blue-500">
+              <h3 class="text-base font-bold text-gray-800">Freelance Developer</h3>
+              <div class="text-blue-600 font-semibold text-xs mb-1">March 2024 - Present</div>
+              <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                <li>Development of a management system for double-entry bookkeeping.
+                  LLM integration for data extraction and entry, RAG for semantic document search.
+                </li>
+                <li>Development of a custom e-commerce platform for eSIMs. Integration with various payment systems,
+                  admin dashboard for product management, discount coupon system, knowledge-base articles,
+                  user panel for credit recharge and refunds.
+                </li>
+                <li>Development of a SaaS product for data visualization and remote management of industrial
+                  agricultural devices.
+                </li>
+                <li>Development of a portal for radio amateurs connecting thousands of users across Europe.
+                  Admin panel for user and event management, dynamic eQSL image generation,
+                  user content uploads, and integration with external APIs for geolocation.
+                </li>
+              </ul>
+            </div>
+
+            <div class="relative pl-4 border-l-2 border-gray-300">
+              <h3 class="text-base font-bold text-gray-800">Web Programmer</h3>
+              <div class="text-gray-500 font-semibold text-xs mb-0">Fertec</div>
+              <div class="text-gray-400 text-xs mb-1">March 2023 - July 2023</div>
+              <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                <li>Design and development of a microservices system for an oxygenator plant.</li>
+                <li>Native Android development of an app for managing and interfacing with medical devices for
+                  eye scans.</li>
+              </ul>
+            </div>
+
+            <div class="relative pl-4 border-l-2 border-gray-300">
+              <h3 class="text-base font-bold text-gray-800">Software Programmer</h3>
+              <div class="text-gray-500 font-semibold text-xs mb-0">SETA S.p.A.</div>
+              <div class="text-gray-400 text-xs mb-1">September 2021 - October 2021</div>
+              <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                <li>Software development for automatic file generation for audio announcements on public transport
+                  vehicles (used in the Modena, Reggio Emilia, and Piacenza fleets).</li>
+                <li>Training machine learning models for passenger counting via onboard cameras.</li>
+              </ul>
+            </div>
+
+            <div class="relative pl-4 border-l-2 border-gray-300">
+              <h3 class="text-base font-bold text-gray-800">Systems Engineer</h3>
+              <div class="text-gray-500 font-semibold text-xs mb-0">Infolog S.r.l.</div>
+              <div class="text-gray-400 text-xs mb-1">June 2021 - July 2021</div>
+              <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                <li>Development of a web application and software for warehouse management.</li>
+                <li>SQL database design and refactoring.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="space-y-6 print:space-y-5">
+
+        <section>
+          <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
+            Availability</h2>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            Available from <strong class="text-gray-800">early September 2026</strong>, on-site in Aarhus
+            (open to remote).
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
+            Tech Stack
+          </h2>
+
+          <dl class="space-y-1.5 text-xs text-gray-600">
+            <div>
+              <dt class="font-semibold text-gray-700">Languages</dt>
+              <dd class="leading-relaxed">TypeScript · JavaScript · Python · C++</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-gray-700">Backend</dt>
+              <dd class="leading-relaxed">Node.js · NestJS · Express · REST</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-gray-700">Frontend &amp; Mobile</dt>
+              <dd class="leading-relaxed">React · Next.js · React Native · Tailwind</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-gray-700">Databases</dt>
+              <dd class="leading-relaxed">PostgreSQL · MongoDB · Redis</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-gray-700">Cloud &amp; DevOps</dt>
+              <dd class="leading-relaxed">Docker · Linux · AWS · GCloud · CI/CD</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-gray-700">AI / LLM</dt>
+              <dd class="leading-relaxed">OpenAI SDK · RAG · LLM integration</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section>
+          <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
+            Education</h2>
+
+          <div class="space-y-4">
+            <div>
+              <h4 class="font-bold text-gray-800">MSc in Computer Science - Artificial Intelligence</h4>
+              <p class="text-sm text-gray-600">Aarhus University <span class="text-gray-500 text-xs">· from Aug
+                  2026</span></p>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-gray-800">BSc in Computer Science</h4>
+              <p class="text-sm text-gray-600">Alma Mater Studiorum - University of Bologna</p>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-gray-800">Erasmus+</h4>
+              <p class="text-sm text-gray-600">Brno University of Technology, Czech Republic</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
+            Languages</h2>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex justify-between">
+              <span>Italian</span>
+              <span class="font-semibold text-gray-800">Native</span>
+            </li>
+            <li class="flex justify-between">
+              <span>English</span>
+              <span class="font-semibold text-gray-800">C1</span>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
+            Interests</h2>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            Open source · Amateur radio &amp; electronics · Traveling (28 countries) ·
+            ESN / Erasmus volunteering · Public transport &amp; urban planning ·
+            Aviation &amp; railways
+          </p>
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+
+</body>
+
+</html>
