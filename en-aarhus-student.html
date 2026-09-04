@@ -185,81 +185,83 @@
               <h2
                 class="text-lg font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider"
               >
-                Selected Projects &amp; Research
+                Work Experience
               </h2>
 
               <div class="space-y-4">
                 <div class="relative pl-4 border-l-2 border-blue-500">
-                  <h3 class="text-sm font-bold text-gray-800">
-                    Web Scraping and LLMs: Comparing Methodologies for Extracting Unstructured Data
-                    <span class="font-normal text-gray-500">&middot; BSc thesis</span>
-                  </h3>
+                  <h3 class="text-sm font-bold text-gray-800">Freelance Developer</h3>
                   <div class="text-blue-600 font-semibold text-xs mb-1">
-                    Solo project &middot; University of Bologna
+                    March 2024 - September 2026
                   </div>
                   <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
                     <li>
-                      Built SWEET (Semantic Web Extraction &amp; Evaluation Tool), a benchmarking
-                      framework comparing LLM-based extraction against rule-based scraping across
-                      GPT, Gemini, Llama and DeepSeek over 1,400+ runs.
+                      Custom eSIM e-commerce platform: multiple payment providers, admin dashboard,
+                      discount coupons, knowledge base, and a user panel for credit top-ups and
+                      refunds.
                     </li>
                     <li>
-                      Showed a hybrid pipeline wins on semi-structured sources: deterministic DOM
-                      pre-filtering cut input tokens by 99.5% while holding the F1 score above 0.95.
+                      Portal for amateur radio operators serving thousands of users across Europe,
+                      with an admin panel for events, dynamic eQSL image generation, and third-party
+                      geolocation APIs.
                     </li>
                     <li>
-                      Cut hallucinations by up to 45% by letting the model emit flexible output and
-                      normalising it downstream in code, instead of forcing a rigid schema on the
-                      model.
+                      "C'&egrave; Sciopero?", the production system the thesis case study drew on: a
+                      5-app Turborepo monorepo (NestJS API, Puppeteer scraper, React frontend, admin
+                      dashboard, Expo mobile app) with PostgreSQL, RabbitMQ, Redis and Docker.
                     </li>
                     <li>
-                      DOM mutation testing ("DOM chaos") showed LLM extraction stays robust where
-                      classic scrapers collapse, traded against latency, cost and silent rather than
-                      fail-fast errors.
+                      JAnus, the AI accounting engine described below, plus an industrial IoT
+                      telemetry platform.
+                    </li>
+                    <li>Qrami, the telemedicine platform described below.</li>
+                  </ul>
+                </div>
+
+                <div class="relative pl-4 border-l-2 border-gray-300">
+                  <h3 class="text-sm font-bold text-gray-800">
+                    Web Programmer
+                    <span class="font-normal text-gray-500">&middot; Fertec</span>
+                  </h3>
+                  <div class="text-gray-400 text-xs mb-1">March 2023 - July 2023</div>
+                  <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                    <li>
+                      Designed and built a microservices system for an oxygenator production plant.
+                    </li>
+                    <li>
+                      Native Android app for interfacing with medical devices used in eye scans.
                     </li>
                   </ul>
                 </div>
 
                 <div class="relative pl-4 border-l-2 border-gray-300">
                   <h3 class="text-sm font-bold text-gray-800">
-                    Qrami &middot; Telemedicine Platform
+                    Software Programmer, internship
+                    <span class="font-normal text-gray-500">&middot; SETA S.p.A.</span>
                   </h3>
-                  <div class="text-gray-500 font-semibold text-xs mb-1">
-                    Freelance client project
-                  </div>
+                  <div class="text-gray-400 text-xs mb-1">September 2021 - October 2021</div>
                   <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
                     <li>
-                      Healthcare platform for remote and at-home doctor visits: NestJS and Prisma
-                      backend, TanStack Start SSR frontend, PostgreSQL with PostGIS for proximity
-                      search, Redis, on Google Cloud Run. JWT auth with role-based access, and an
-                      OpenAPI-driven workflow generating the typed frontend client from the backend
-                      spec.
+                      Trained machine learning models for automatic passenger counting from onboard
+                      camera feeds.
                     </li>
                     <li>
-                      Handling sensitive health data under GDPR: authored the technical
-                      sub-processor and data-flow documentation used by the client's legal team to
-                      draft the DPA.
+                      Built the audio-announcement generation pipeline still used across the Modena,
+                      Reggio Emilia and Piacenza bus fleets.
                     </li>
                   </ul>
                 </div>
 
                 <div class="relative pl-4 border-l-2 border-gray-300">
                   <h3 class="text-sm font-bold text-gray-800">
-                    Industrial IoT Platform &middot; Time-Series Telemetry
+                    Systems Engineer, internship
+                    <span class="font-normal text-gray-500">&middot; Infolog S.r.l.</span>
                   </h3>
-                  <div class="text-gray-500 font-semibold text-xs mb-1">
-                    Freelance client project
-                  </div>
+                  <div class="text-gray-400 text-xs mb-1">June 2021 - July 2021</div>
                   <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
                     <li>
-                      NestJS API gateway over Eclipse Kapua for remote management and monitoring of
-                      agricultural machinery. Dockerised, with automated staging releases driven by
-                      a webhook and PM2.
-                    </li>
-                    <li>
-                      Designed the telemetry store on PostgreSQL with TimescaleDB: hypertables,
-                      native compression, continuous aggregates and retention policies to keep
-                      high-frequency sensor data queryable at low cost.
+                      Warehouse management web application, plus SQL database design and
+                      refactoring.
                     </li>
                   </ul>
                 </div>
@@ -312,9 +314,8 @@
                 Availability
               </h2>
               <p class="text-xs text-gray-600 leading-relaxed">
-                Based in Aarhus, available immediately for
-                a part-time or student position (15-20 hours/week)
-                alongside my studies.
+                Based in Aarhus, available immediately for a part-time or student position (15-20
+                hours/week) alongside my studies.
               </p>
             </section>
 
@@ -402,81 +403,102 @@
               <h2
                 class="text-lg font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider"
               >
-                Work Experience
+                Selected Projects &amp; Research
               </h2>
 
               <div class="space-y-4">
                 <div class="relative pl-4 border-l-2 border-blue-500">
-                  <h3 class="text-sm font-bold text-gray-800">Freelance Developer</h3>
-                  <div class="text-blue-600 font-semibold text-xs mb-1">March 2024 - September 2026</div>
-                  <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
-                    <li>
-                      Double-entry bookkeeping system with LLM-based extraction of accounting data
-                      from documents, and RAG for semantic search over the document archive.
-                    </li>
-                    <li>
-                      Custom eSIM e-commerce platform: multiple payment providers, admin dashboard,
-                      discount coupons, knowledge base, and a user panel for credit top-ups and
-                      refunds.
-                    </li>
-                    <li>
-                      Portal for amateur radio operators serving thousands of users across Europe,
-                      with an admin panel for events, dynamic eQSL image generation, and third-party
-                      geolocation APIs.
-                    </li>
-                    <li>
-                      "C'&egrave; Sciopero?", the production system the thesis case study drew on: a
-                      5-app Turborepo monorepo (NestJS API, Puppeteer scraper, React frontend, admin
-                      dashboard, Expo mobile app) with PostgreSQL, RabbitMQ, Redis and Docker.
-                    </li>
-                    <li>Telemedicine and industrial IoT platforms described above.</li>
-                  </ul>
-                </div>
-
-                <div class="relative pl-4 border-l-2 border-gray-300">
                   <h3 class="text-sm font-bold text-gray-800">
-                    Web Programmer
-                    <span class="font-normal text-gray-500">&middot; Fertec</span>
+                    Web Scraping and LLMs: Comparing Methodologies for Extracting Unstructured Data
+                    <span class="font-normal text-gray-500">&middot; BSc thesis</span>
                   </h3>
-                  <div class="text-gray-400 text-xs mb-1">March 2023 - July 2023</div>
+                  <div class="text-blue-600 font-semibold text-xs mb-1">
+                    Solo project &middot; University of Bologna
+                  </div>
                   <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
                     <li>
-                      Designed and built a microservices system for an oxygenator production plant.
+                      Built SWEET (Semantic Web Extraction &amp; Evaluation Tool), a benchmarking
+                      framework comparing LLM-based extraction against rule-based scraping across
+                      GPT, Gemini, Llama and DeepSeek over 1,400+ runs.
                     </li>
                     <li>
-                      Native Android app for interfacing with medical devices used in eye scans.
+                      Showed a hybrid pipeline wins on semi-structured sources: deterministic DOM
+                      pre-filtering cut input tokens by 99.5% while holding the F1 score above 0.95.
+                    </li>
+                    <li>
+                      Cut hallucinations by up to 45% by letting the model emit flexible output and
+                      normalising it downstream in code, instead of forcing a rigid schema on the
+                      model.
+                    </li>
+                    <li>
+                      DOM mutation testing ("DOM chaos") showed LLM extraction stays robust where
+                      classic scrapers collapse, traded against latency, cost and silent rather than
+                      fail-fast errors.
                     </li>
                   </ul>
                 </div>
 
                 <div class="relative pl-4 border-l-2 border-gray-300">
                   <h3 class="text-sm font-bold text-gray-800">
-                    Software Programmer, internship
-                    <span class="font-normal text-gray-500">&middot; SETA S.p.A.</span>
+                    JAnus &middot; AI Accounting Engine
                   </h3>
-                  <div class="text-gray-400 text-xs mb-1">September 2021 - October 2021</div>
+                  <div class="text-gray-500 font-semibold text-xs mb-1">
+                    Freelance client project
+                  </div>
                   <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
                     <li>
-                      Trained machine learning models for automatic passenger counting from onboard
-                      camera feeds.
+                      Double-entry accounting engine for Italian VAT-registered freelancers:
+                      invoicing, VAT, payment schedules, cash flow and depreciation, in an Nx
+                      monorepo with a NestJS/Prisma backend on PostgreSQL and an Angular frontend.
                     </li>
                     <li>
-                      Built the audio-announcement generation pipeline still used across the Modena,
-                      Reggio Emilia and Piacenza bus fleets.
+                      The whole system is driven from a chat interface: an LLM layer with function
+                      calling and structured output turns plain-language requests into accounting
+                      operations, with RAG over the user's own documents.
                     </li>
                   </ul>
                 </div>
 
                 <div class="relative pl-4 border-l-2 border-gray-300">
                   <h3 class="text-sm font-bold text-gray-800">
-                    Systems Engineer, internship
-                    <span class="font-normal text-gray-500">&middot; Infolog S.r.l.</span>
+                    Qrami &middot; Telemedicine Platform
                   </h3>
-                  <div class="text-gray-400 text-xs mb-1">June 2021 - July 2021</div>
+                  <div class="text-gray-500 font-semibold text-xs mb-1">
+                    Freelance client project
+                  </div>
                   <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
                     <li>
-                      Warehouse management web application, plus SQL database design and
-                      refactoring.
+                      Healthcare platform for remote and at-home doctor visits: NestJS and Prisma
+                      backend, TanStack Start SSR frontend, PostgreSQL with PostGIS for proximity
+                      search, Redis, on Google Cloud Run. JWT auth with role-based access, and an
+                      OpenAPI-driven workflow generating the typed frontend client from the backend
+                      spec.
+                    </li>
+                    <li>
+                      Handling sensitive health data under GDPR: authored the technical
+                      sub-processor and data-flow documentation used by the client's legal team to
+                      draft the DPA.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="relative pl-4 border-l-2 border-gray-300">
+                  <h3 class="text-sm font-bold text-gray-800">
+                    Industrial IoT Platform &middot; Time-Series Telemetry
+                  </h3>
+                  <div class="text-gray-500 font-semibold text-xs mb-1">
+                    Freelance client project
+                  </div>
+                  <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                    <li>
+                      NestJS API gateway over Eclipse Kapua for remote management and monitoring of
+                      agricultural machinery. Dockerised, with automated staging releases driven by
+                      a webhook and PM2.
+                    </li>
+                    <li>
+                      Designed the telemetry store on PostgreSQL with TimescaleDB, using
+                      hypertables, native compression, continuous aggregates and retention policies
+                      to keep high-frequency sensor data queryable at a low cost.
                     </li>
                   </ul>
                 </div>
