@@ -196,7 +196,7 @@
                   </div>
                   <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
                     <li>
-                      Custom eSIM e-commerce platform: multiple payment providers, admin dashboard,
+                      Custom eSIM e-commerce platform with multiple payment providers, admin dashboard,
                       discount coupons, knowledge base, and a user panel for credit top-ups and
                       refunds.
                     </li>
@@ -452,9 +452,9 @@
                       monorepo with a NestJS/Prisma backend on PostgreSQL and an Angular frontend.
                     </li>
                     <li>
-                      The whole system is driven from a chat interface: an LLM layer with function
-                      calling and structured output turns plain-language requests into accounting
-                      operations, with RAG over the user's own documents.
+                      The whole system is driven from a chat via an LLM, with function
+                      calling and structured output, turning plain-language requests into accounting
+                      operations. RAG is used to retrieve the information from the client's own invoices and receipts.
                     </li>
                   </ul>
                 </div>
@@ -468,16 +468,21 @@
                   </div>
                   <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
                     <li>
-                      Healthcare platform for remote and at-home doctor visits: NestJS and Prisma
-                      backend, TanStack Start SSR frontend, PostgreSQL with PostGIS for proximity
-                      search, Redis, on Google Cloud Run. JWT auth with role-based access, and an
-                      OpenAPI-driven workflow generating the typed frontend client from the backend
-                      spec.
+                      Full telemedicine platform where doctors sign up, onboard onto Stripe Connect to
+                      get paid and set their own schedule, rates and coverage area; patients sign up
+                      and book a visit, and a matching algorithm picks the doctor by distance,
+                      availability and the patient's own ranking. Payments are handled end to end,
+                      automatically.
                     </li>
                     <li>
-                      Handling sensitive health data under GDPR: authored the technical
-                      sub-processor and data-flow documentation used by the client's legal team to
-                      draft the DPA.
+                      Visits are either video consultations, run through the Daily.co API to put
+                      doctor and patient in a call, or house calls. Every visit ends with a medical
+                      report and a fiscal receipt in the patient's dashboard.
+                    </li>
+                    <li>
+                      Admin dashboard over the whole system with a full audit log, role-based access
+                      per user type, and GDPR handling for the health data involved. NestJS, Prisma,
+                      PostgreSQL with PostGIS, TanStack Start, on Google Cloud Run.
                     </li>
                   </ul>
                 </div>
