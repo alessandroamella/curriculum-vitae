@@ -54,6 +54,10 @@
         .sheet {
           page-break-after: always;
           break-after: page;
+          display: flex;
+          flex-direction: column;
+          min-height: 297mm;
+          box-sizing: border-box;
         }
 
         .sheet:last-child {
@@ -144,6 +148,10 @@
               >
                 <i class="fab fa-linkedin w-5"></i>
                 linkedin.com/in/alessandro-amella
+              </a>
+              <a href="tel:+393924133359" class="hover:text-blue-300 transition">
+                <i class="fas fa-phone w-5"></i>
+                +39 392 413 3359
               </a>
               <div class="text-gray-400 print:text-gray-200">
                 <i class="fas fa-map-marker-alt w-5"></i>
@@ -375,6 +383,13 @@
             </section>
           </div>
         </main>
+        <footer
+          class="hidden print:flex print:mt-auto print:items-center print:justify-between print:border-t print:border-gray-200 print:px-8 print:pt-2 print:pb-4 print:text-[10px] print:text-gray-500"
+        >
+          <span class="font-bold text-gray-800">Alessandro Amella</span>
+          <span>alessandro@amella.it &middot; +39 392 413 3359</span>
+          <span>Page 1 of 2</span>
+        </footer>
       </div>
 
       <!-- ============================ SHEET 2 ============================ -->
@@ -484,6 +499,13 @@
             </section>
           </div>
         </main>
+        <footer
+          class="hidden print:flex print:mt-auto print:items-center print:justify-between print:border-t print:border-gray-200 print:px-8 print:pt-2 print:pb-4 print:text-[10px] print:text-gray-500"
+        >
+          <span class="font-bold text-gray-800">Alessandro Amella</span>
+          <span>alessandro@amella.it &middot; +39 392 413 3359</span>
+          <span>Page 2 of 2</span>
+        </footer>
       </div>
     </div>
   </body>
