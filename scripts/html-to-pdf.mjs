@@ -9,6 +9,7 @@ const HTML_FILES = [
   "en-aarhus.html",
   "en-aarhus-student.html",
   "en-freelance.html",
+  "en-restaurant.html",
 ];
 
 const outDir = resolve(process.argv[2] ?? "dist");
