@@ -2,3 +2,4 @@
 .build-*.html
 node_modules/
 dist/
+*.local.html
