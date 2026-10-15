@@ -1,16 +1,10 @@
-import { mkdir } from "node:fs/promises";
+import { mkdir, readdir } from "node:fs/promises";
 import { basename, extname, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import puppeteer from "puppeteer";
 
-const HTML_FILES = [
-  "cv-alessandro-amella.html",
-  "en.html",
-  "en-aarhus.html",
-  "en-aarhus-student.html",
-  "en-freelance.html",
-  "en-restaurant.html",
-];
+// Every CV is a top-level .html file, so pick them all up instead of keeping a list
+const HTML_FILES = (await readdir(".")).filter((f) => extname(f) === ".html").sort();
 
 const outDir = resolve(process.argv[2] ?? "dist");
 await mkdir(outDir, { recursive: true });

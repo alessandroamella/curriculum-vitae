@@ -1,350 +1,337 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV - Alessandro Amella</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Alessandro Amella</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <style>
-      body {
-        font-family: "Inter", sans-serif;
-      }
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-      /* Screen-only separation between the two sheets, so editing shows where the
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+
+    /* Screen-only separation between the two sheets, so editing shows where the
        printed page break falls. */
-      .sheet + .sheet {
-        border-top: 2px dashed #cbd5e1;
+    .sheet+.sheet {
+      border-top: 2px dashed #cbd5e1;
+    }
+
+    @media print {
+      .no-print {
+        display: none !important;
       }
 
-      @media print {
-        .no-print {
-          display: none !important;
-        }
+      body {
+        background-color: white;
+      }
 
-        body {
-          background-color: white;
-        }
+      .page {
+        box-shadow: none;
+        margin: 0;
+        width: 100%;
+        /* overflow:hidden on the wrapper clips fragmented content in print */
+        overflow: visible !important;
+      }
 
-        .page {
-          box-shadow: none;
-          margin: 0;
-          width: 100%;
-          /* overflow:hidden on the wrapper clips fragmented content in print */
-          overflow: visible !important;
-        }
-
-        /* Firefox cannot fragment a CSS grid container across pages: rather than
+      /* Firefox cannot fragment a CSS grid container across pages: rather than
          splitting it, it pushes the entire grid to the next page, which strands the
          header alone on page 1. So the CV is split into .sheet blocks, each holding
          its own grid sized to fit a single page, with an explicit break between
          them. No browser is ever asked to split a grid. Chromium coped with the old
          single-grid markup; Firefox did not. */
-        .sheet {
-          page-break-after: always;
-          break-after: page;
-          display: flex;
-          flex-direction: column;
-          min-height: 297mm;
-          box-sizing: border-box;
-        }
-
-        .sheet:last-child {
-          page-break-after: auto;
-          break-after: auto;
-        }
-
-        .sheet + .sheet {
-          border-top: none;
-        }
-
-        section {
-          page-break-inside: avoid;
-          break-inside: avoid;
-          margin-bottom: 0.75rem;
-        }
-
-        @page {
-          size: A4;
-          margin: 0;
-        }
-
-        a {
-          text-decoration: none;
-          color: black;
-          -webkit-print-color-adjust: exact;
-          print-color-adjust: exact;
-        }
-
-        header,
-        span {
-          -webkit-print-color-adjust: exact;
-          print-color-adjust: exact;
-        }
+      .sheet {
+        page-break-after: always;
+        break-after: page;
+        display: flex;
+        flex-direction: column;
+        min-height: 297mm;
+        box-sizing: border-box;
       }
-    </style>
-  </head>
 
-    <body class="bg-gray-100 print:bg-white text-gray-800 min-h-screen py-10 print:py-0">
-    <div
-      class="page max-w-4xl mx-auto bg-white shadow-xl print:shadow-none sm:rounded-lg overflow-hidden print:max-w-full print:rounded-none"
-    >
-      <div class="sheet">
-        <header class="bg-gray-800 text-white p-6 print:py-5 sm:p-8">
-          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-            <div class="flex items-center gap-4">
-              <img
-                src="profile-pic.jpg"
-                alt="Alessandro Amella"
-                class="w-24 h-24 rounded-full object-cover flex-shrink-0"
-              />
+      .sheet:last-child {
+        page-break-after: auto;
+        break-after: auto;
+      }
+
+      .sheet+.sheet {
+        border-top: none;
+      }
+
+      section {
+        page-break-inside: avoid;
+        break-inside: avoid;
+        margin-bottom: 0.75rem;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      header,
+      span {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 print:bg-white text-gray-800 min-h-screen print:min-h-0 py-10 print:py-0">
+  <div
+    class="page max-w-4xl mx-auto bg-white shadow-xl print:shadow-none sm:rounded-lg overflow-hidden print:max-w-full print:rounded-none">
+    <div class="sheet">
+      <header class="bg-gray-800 text-white p-6 print:py-5 sm:p-8">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div class="flex items-center gap-4">
+            <img src="profile-pic.jpg" alt="Alessandro Amella"
+              class="w-24 h-24 rounded-full object-cover flex-shrink-0" />
+            <div>
+              <h1 class="text-3xl font-bold tracking-tight mb-1">Alessandro Amella</h1>
+              <p class="text-lg text-gray-300 font-medium">
+                MSc Student &middot; Aarhus University
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-1 text-xs sm:text-right">
+            <a href="mailto:alessandro@amella.it" class="hover:text-blue-300 transition">
+              <i class="fas fa-envelope w-5"></i>
+              alessandro@amella.it
+            </a>
+            <a href="tel:{{PHONE_TEL}}" class="hover:text-blue-300 transition">
+              <i class="fas fa-phone w-5"></i>
+              {{PHONE}}
+            </a>
+            <div class="text-gray-400 print:text-gray-200">
+              <i class="fas fa-map-marker-alt w-5"></i>
+              Aarhus, Denmark
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-3 gap-8 print:grid-cols-3 print:gap-6">
+        <div class="md:col-span-2 print:col-span-2 space-y-6 print:space-y-5">
+          <section>
+            <h2 class="text-lg font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider">
+              Profile
+            </h2>
+            <p class="text-xs text-gray-600 leading-relaxed text-justify">
+              Italian student from the Bologna area, now in Aarhus for my MSc in Computer Science
+              at Aarhus University. Alongside my studies and freelance development work, I have
+              managed a volunteer-run caf&eacute; (Kin&oacute; Caf&eacute;) from opening to closing,
+              worked the counter and the kitchen in fast foods (McDonald's and Burger King), done
+              delivery for two pizzerias, and served and run the bar every summer at my town's
+              festival. I am used to rush hours, to keeping things clean and in order while they
+              last, and to following food-safety rules without being reminded. Weekend shifts suit
+              me great, and I can also cover weekdays when needed.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-lg font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
+              Restaurant Experience
+            </h2>
+
+            <div class="space-y-4">
+              <div class="relative pl-4 border-l-2 border-blue-500">
+                <h3 class="text-sm font-bold text-gray-800">
+                  Caf&eacute; Manager (volunteer)
+                  <span class="font-normal text-gray-500">&middot; Kin&oacute; Caf&eacute;, San Cesario sul Panaro</span>
+                </h3>
+                <div class="text-blue-600 font-semibold text-xs mb-1">December 2024 - June 2025</div>
+                <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                  <li>
+                    Managed the whole caf&eacute; day to day: opening and closing, serving tables and the bar,
+                    inventory and stock, and cash and card payments at the till.
+                  </li>
+                  <li>
+                    Also built and ran its till and membership system, with a receipt printer and a customer
+                    display.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="relative pl-4 border-l-2 border-gray-300">
+                <h3 class="text-sm font-bold text-gray-800">
+                  Crew Member, Kitchen &amp; Counter
+                  <span class="font-normal text-gray-500">&middot; Burger King, Castelfranco Emilia</span>
+                </h3>
+                <div class="text-gray-400 text-xs mb-1">2025</div>
+                <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                  <li>
+                    Worked the kitchen line and the front counter, moving between stations
+                    depending on where the rush was.
+                  </li>
+                  <li>
+                    Prepared orders (mainly operating the <i>broiler</i> to cook the burger patties) to, keeping the
+                    line stocked and clean.
+                  </li>
+                  <li>
+                    Cleaned and sanitized the restaurant at the end of the shift, including the kitchen and the dining
+                    area.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="relative pl-4 border-l-2 border-gray-300">
+                <h3 class="text-sm font-bold text-gray-800">
+                  Delivery Driver
+                  <span class="font-normal text-gray-500">&middot; Fuggi Pizza, Castelfranco Emilia &amp; Capriccio 2, Piumazzo</span>
+                </h3>
+                <div class="text-gray-400 text-xs mb-1">2024 - 2025</div>
+                <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                  <li>
+                    Evening and weekend deliveries for two pizzerias, one of them among the most famous
+                    Neapolitan pizzerias in the area, handling orders and payments at the door.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="relative pl-4 border-l-2 border-gray-300">
+                <h3 class="text-sm font-bold text-gray-800">
+                  Crew Member
+                  <span class="font-normal text-gray-500">&middot; McDonald's, Vignola</span>
+                </h3>
+                <div class="text-gray-400 text-xs mb-1">2021</div>
+                <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                  <li>
+                    Took and delivered orders, handled cash and card payments and assembled orders at peak
+                    times.
+                  </li>
+                  <li>Kept the counter and dining area clean during and between rushes.</li>
+                </ul>
+              </div>
+
+              <div class="relative pl-4 border-l-2 border-gray-300">
+                <h3 class="text-sm font-bold text-gray-800">
+                  Volunteer Waiter &amp; Bartender
+                  <span class="font-normal text-gray-500">&middot; San Cesario sul Panaro</span>
+                </h3>
+                <div class="text-gray-400 text-xs mb-1">Every August</div>
+                <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                  <li>
+                    Served tables and worked the bar at my town's food festival organized by <i>Le Contrade</i>
+                    association,
+                    with hundreds
+                    of guests a night and a team of volunteers.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="space-y-4 print:space-y-4">
+          <section>
+            <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider">
+              Availability
+            </h2>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              Living in Aarhus, can start immediately. Available every weekend, plus weekdays
+              around my lectures. Happy to take extra hours in busy periods.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider">
+              Strengths
+            </h2>
+            <ul class="list-disc list-outside ml-4 text-xs text-gray-600 space-y-1">
+              <li>Fast and calm under pressure</li>
+              <li>Proactive and organized</li>
+              <li>Reliable and responsible</li>
+              <li>Friendly and polite</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider">
+              Languages
+            </h2>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              Italian
+              <strong class="text-gray-800">native</strong>
+              &middot; English
+              <strong class="text-gray-800">C1</strong>
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider">
+              Education
+            </h2>
+            <div class="space-y-2">
               <div>
-                <h1 class="text-3xl font-bold tracking-tight mb-1">Alessandro Amella</h1>
-                <p class="text-lg text-gray-300 font-medium">
-                  MSc Computer Science Student &middot; Aarhus University
+                <h4 class="font-bold text-gray-800 text-sm">MSc Computer Science</h4>
+                <p class="text-xs text-gray-600">
+                  Aarhus University
+                  <span class="text-gray-500">&middot; 2026 - 2028</span>
+                </p>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 text-sm">BSc Computer Science</h4>
+                <p class="text-xs text-gray-600">
+                  University of Bologna
+                  <span class="text-gray-500">&middot; 2023 - 2026</span>
                 </p>
               </div>
             </div>
+          </section>
 
-            <div class="flex flex-col gap-1 text-xs sm:text-right">
-              <a href="mailto:alessandro@amella.it" class="hover:text-blue-300 transition">
-                <i class="fas fa-envelope w-5"></i>
-                alessandro@amella.it
-              </a>
-              <a href="tel:{{PHONE_TEL}}" class="hover:text-blue-300 transition">
-                <i class="fas fa-phone w-5"></i>
-                {{PHONE}}
-              </a>
-              <div class="text-gray-400 print:text-gray-200">
-                <i class="fas fa-map-marker-alt w-5"></i>
-                Aarhus, Denmark
+          <section>
+            <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider">
+              Other Experience
+            </h2>
+            <div class="space-y-2">
+              <div>
+                <h4 class="font-bold text-gray-800 text-sm">Freelance Software Developer</h4>
+                <p class="text-xs text-gray-600 leading-relaxed">
+                  <span class="text-gray-500">2024 - 2026 &middot;</span>
+                  Various web development-related projects for startups and small businesses, dealing directly with
+                  clients and managing my own deadlines.
+                </p>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 text-sm">Internships</h4>
+                <p class="text-xs text-gray-600 leading-relaxed">
+                  SETA S.p.A. (public transport, machine learning) and Infolog S.r.l. (warehouse
+                  software), 2021. BSc thesis on web scraping and LLMs.
+                </p>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 text-sm">ESN Volunteer</h4>
+                <p class="text-xs text-gray-600 leading-relaxed">
+                  <span class="text-gray-500">2024 - 2026 &middot;</span>
+                  Organized events for Erasmus students, handled payments and card renewals.
+                </p>
               </div>
             </div>
-          </div>
-        </header>
-
-        <main
-          class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-3 gap-8 print:grid-cols-3 print:gap-6"
-        >
-          <div class="md:col-span-2 print:col-span-2 space-y-6 print:space-y-5">
-            <section>
-              <h2
-                class="text-lg font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider"
-              >
-                Profile
-              </h2>
-              <p class="text-xs text-gray-600 leading-relaxed text-justify">
-                Italian student from the Bologna area, now in Aarhus for my MSc in Computer Science
-                at Aarhus University. Alongside my studies and freelance development work, I have
-                worked both the counter and the kitchen in high-volume fast food (McDonald's and
-                Burger King), done delivery for two pizzerias, and served and run the bar every
-                summer as a volunteer at my town's food festival. I am used to rush hours, to
-                keeping my station clean while it gets busy, and to following food-safety rules
-                without being reminded. Weekend shifts suit me perfectly, and I can also cover
-                weekdays when needed.
-              </p>
-            </section>
-
-            <section>
-              <h2
-                class="text-lg font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider"
-              >
-                Restaurant Experience
-              </h2>
-
-              <div class="space-y-4">
-                <div class="relative pl-4 border-l-2 border-blue-500">
-                  <h3 class="text-sm font-bold text-gray-800">
-                    Crew Member, Kitchen &amp; Counter
-                    <span class="font-normal text-gray-500">&middot; Burger King, Castelfranco Emilia (MO)</span>
-                  </h3>
-                  <div class="text-blue-600 font-semibold text-xs mb-1">2025</div>
-                  <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
-                    <li>
-                      Worked the kitchen line and the front counter, moving between stations
-                      depending on where the rush was.
-                    </li>
-                    <li>
-                      Prepared orders to standard and on time, keeping the line stocked, clean and
-                      within hygiene and food-safety procedures.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="relative pl-4 border-l-2 border-gray-300">
-                  <h3 class="text-sm font-bold text-gray-800">
-                    Delivery Driver
-                    <span class="font-normal text-gray-500"
-                      >&middot; Fuggi Pizza, Castelfranco Emilia (MO)</span
-                    >
-                  </h3>
-                  <div class="text-gray-400 text-xs mb-1">2025</div>
-                  <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
-                    <li>
-                      Delivered orders on busy evenings and weekends, working closely with the
-                      kitchen to get pizzas out hot and on time.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="relative pl-4 border-l-2 border-gray-300">
-                  <h3 class="text-sm font-bold text-gray-800">
-                    Delivery Driver
-                    <span class="font-normal text-gray-500">&middot; Capriccio 2, Piumazzo (MO)</span>
-                  </h3>
-                  <div class="text-gray-400 text-xs mb-1">2024</div>
-                  <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
-                    <li>
-                      Evening and weekend deliveries for a busy neighbourhood pizzeria, handling
-                      orders and payments at the door.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="relative pl-4 border-l-2 border-gray-300">
-                  <h3 class="text-sm font-bold text-gray-800">
-                    Crew Member, Front Counter
-                    <span class="font-normal text-gray-500">&middot; McDonald's, Vignola (MO)</span>
-                  </h3>
-                  <div class="text-gray-400 text-xs mb-1">2021</div>
-                  <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
-                    <li>
-                      Took orders, handled cash and card payments and assembled orders at peak
-                      times, with strict service-time targets.
-                    </li>
-                    <li>Kept the counter and dining area clean during and between rushes.</li>
-                  </ul>
-                </div>
-
-                <div class="relative pl-4 border-l-2 border-gray-300">
-                  <h3 class="text-sm font-bold text-gray-800">
-                    Volunteer Waiter &amp; Bartender
-                    <span class="font-normal text-gray-500"
-                      >&middot; Sagra di San Cesario, Associazione Le Contrade</span
-                    >
-                  </h3>
-                  <div class="text-gray-400 text-xs mb-1">Every August, about one month a year</div>
-                  <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
-                    <li>
-                      Served tables and worked the bar at the town's food festival, with hundreds
-                      of guests a night and a team of volunteers.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-          </div>
-
-          <div class="space-y-4 print:space-y-4">
-            <section>
-              <h2
-                class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider"
-              >
-                Availability
-              </h2>
-              <p class="text-xs text-gray-600 leading-relaxed">
-                Living in Aarhus, can start immediately. Available every weekend, plus weekdays
-                around my lectures. Happy to take extra hours in busy periods.
-              </p>
-            </section>
-
-            <section>
-              <h2
-                class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider"
-              >
-                Strengths
-              </h2>
-              <ul class="list-disc list-outside ml-4 text-xs text-gray-600 space-y-1">
-                <li>Fast and calm under pressure</li>
-                <li>Clean as I go, hygiene first</li>
-                <li>Kitchen and front of house</li>
-                <li>Sees what needs doing without being asked</li>
-                <li>Reliable and punctual</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2
-                class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider"
-              >
-                Languages
-              </h2>
-              <p class="text-xs text-gray-600 leading-relaxed">
-                Italian
-                <strong class="text-gray-800">native</strong>
-                &middot; English
-                <strong class="text-gray-800">C1</strong>
-              </p>
-            </section>
-
-            <section>
-              <h2
-                class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider"
-              >
-                Education
-              </h2>
-              <div class="space-y-2">
-                <div>
-                  <h4 class="font-bold text-gray-800 text-sm">MSc Computer Science</h4>
-                  <p class="text-xs text-gray-600">
-                    Aarhus University
-                    <span class="text-gray-500">&middot; 2026 - 2028</span>
-                  </p>
-                </div>
-                <div>
-                  <h4 class="font-bold text-gray-800 text-sm">BSc Computer Science</h4>
-                  <p class="text-xs text-gray-600">
-                    University of Bologna
-                    <span class="text-gray-500">&middot; 2026</span>
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h2
-                class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider"
-              >
-                Other Experience
-              </h2>
-              <div class="space-y-2">
-                <div>
-                  <h4 class="font-bold text-gray-800 text-sm">Freelance Software Developer</h4>
-                  <p class="text-xs text-gray-600 leading-relaxed">
-                    <span class="text-gray-500">2024 - 2026 &middot;</span>
-                    Web and mobile apps for startups and small businesses, from first meeting to
-                    production, dealing directly with clients and managing my own deadlines.
-                  </p>
-                </div>
-                <div>
-                  <h4 class="font-bold text-gray-800 text-sm">Internships</h4>
-                  <p class="text-xs text-gray-600 leading-relaxed">
-                    SETA S.p.A. (public transport, machine learning) and Infolog S.r.l. (warehouse
-                    software), 2021. BSc thesis on web scraping and LLMs.
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
-        </main>
-        <footer
-          class="hidden print:flex print:mt-auto print:items-center print:justify-between print:border-t print:border-gray-200 print:px-8 print:pt-2 print:pb-4 print:text-[10px] print:text-gray-500"
-        >
-          <span class="font-bold text-gray-800">Alessandro Amella</span>
-          <span>alessandro@amella.it &middot; {{PHONE}}</span>
-        </footer>
-      </div>
+          </section>
+        </div>
+      </main>
+      <footer
+        class="hidden print:flex print:mt-auto print:items-center print:justify-between print:border-t print:border-gray-200 print:px-8 print:pt-2 print:pb-4 print:text-[10px] print:text-gray-500">
+        <span class="font-bold text-gray-800">Alessandro Amella</span>
+        <span>alessandro@amella.it &middot; {{PHONE}}</span>
+      </footer>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
