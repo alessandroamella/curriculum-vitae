@@ -1,0 +1,4 @@
+.env
+.build-*.html
+node_modules/
+dist/

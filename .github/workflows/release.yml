@@ -23,6 +23,8 @@ jobs:
 
       - name: Print CVs to PDF
         run: node scripts/html-to-pdf.mjs dist
+        env:
+          CV_PHONE: ${{ secrets.CV_PHONE }}
 
       - name: Set release tag
         id: tag
