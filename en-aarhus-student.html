@@ -1,630 +1,577 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV - Alessandro Amella</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Alessandro Amella</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <style>
-      body {
-        font-family: "Inter", sans-serif;
-      }
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-      /* Screen-only separation between the two sheets, so editing shows where the
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+
+    /* Screen-only separation between the two sheets, so editing shows where the
        printed page break falls. */
-      .sheet + .sheet {
-        border-top: 2px dashed #cbd5e1;
+    .sheet+.sheet {
+      border-top: 2px dashed #cbd5e1;
+    }
+
+    @media print {
+      .no-print {
+        display: none !important;
       }
 
-      @media print {
-        .no-print {
-          display: none !important;
-        }
+      body {
+        background-color: white;
+      }
 
-        body {
-          background-color: white;
-        }
+      .page {
+        box-shadow: none;
+        margin: 0;
+        width: 100%;
+        /* overflow:hidden on the wrapper clips fragmented content in print */
+        overflow: visible !important;
+      }
 
-        .page {
-          box-shadow: none;
-          margin: 0;
-          width: 100%;
-          /* overflow:hidden on the wrapper clips fragmented content in print */
-          overflow: visible !important;
-        }
-
-        /* Firefox cannot fragment a CSS grid container across pages: rather than
+      /* Firefox cannot fragment a CSS grid container across pages: rather than
          splitting it, it pushes the entire grid to the next page, which strands the
          header alone on page 1. So the CV is split into .sheet blocks, each holding
          its own grid sized to fit a single page, with an explicit break between
          them. No browser is ever asked to split a grid. Chromium coped with the old
          single-grid markup; Firefox did not. */
-        .sheet {
-          page-break-after: always;
-          break-after: page;
-          display: flex;
-          flex-direction: column;
-          min-height: 297mm;
-          box-sizing: border-box;
-        }
-
-        .sheet:last-child {
-          page-break-after: auto;
-          break-after: auto;
-        }
-
-        .sheet + .sheet {
-          border-top: none;
-        }
-
-        section {
-          page-break-inside: avoid;
-          break-inside: avoid;
-          margin-bottom: 0.75rem;
-        }
-
-        @page {
-          size: A4;
-          margin: 0;
-        }
-
-        a {
-          text-decoration: none;
-          color: black;
-          -webkit-print-color-adjust: exact;
-          print-color-adjust: exact;
-        }
-
-        header,
-        span {
-          -webkit-print-color-adjust: exact;
-          print-color-adjust: exact;
-        }
+      .sheet {
+        page-break-after: always;
+        break-after: page;
+        display: flex;
+        flex-direction: column;
+        min-height: 297mm;
+        box-sizing: border-box;
       }
-    </style>
-  </head>
 
-  <body class="bg-gray-100 print:bg-white text-gray-800 min-h-screen print:min-h-0 py-10 print:py-0">
-    <div
-      class="page max-w-4xl mx-auto bg-white shadow-xl print:shadow-none sm:rounded-lg overflow-hidden print:max-w-full print:rounded-none"
-    >
-      <!-- ============================ SHEET 1 ============================ -->
-      <div class="sheet">
-        <header class="bg-gray-800 text-white p-6 print:py-5 sm:p-8">
-          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-            <div class="flex items-center gap-4">
-              <img
-                src="profile-pic.jpg"
-                alt="Alessandro Amella"
-                class="w-24 h-24 rounded-full object-cover flex-shrink-0"
-              />
+      .sheet:last-child {
+        page-break-after: auto;
+        break-after: auto;
+      }
+
+      .sheet+.sheet {
+        border-top: none;
+      }
+
+      section {
+        page-break-inside: avoid;
+        break-inside: avoid;
+        margin-bottom: 0.75rem;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      header,
+      span {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 print:bg-white text-gray-800 min-h-screen print:min-h-0 py-10 print:py-0">
+  <div
+    class="page max-w-4xl mx-auto bg-white shadow-xl print:shadow-none sm:rounded-lg overflow-hidden print:max-w-full print:rounded-none">
+    <!-- ============================ SHEET 1 ============================ -->
+    <div class="sheet">
+      <header class="bg-gray-800 text-white p-6 print:py-5 sm:p-8">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div class="flex items-center gap-4">
+            <img src="profile-pic.jpg" alt="Alessandro Amella"
+              class="w-24 h-24 rounded-full object-cover flex-shrink-0" />
+            <div>
+              <h1 class="text-3xl font-bold tracking-tight mb-1">Alessandro Amella</h1>
+              <p class="text-lg text-gray-300 font-medium">
+                Full-Stack Developer
+              </p>
+              <div class="mt-1 text-xs text-gray-300">
+                Portfolio:
+                <a href="https://www.amella.it" target="_blank" class="font-semibold hover:text-blue-300 transition">
+                  www.amella.it
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-1 text-xs sm:text-right">
+            <a href="mailto:alessandro@amella.it" class="hover:text-blue-300 transition">
+              <i class="fas fa-envelope w-5"></i>
+              alessandro@amella.it
+            </a>
+            <a href="https://github.com/alessandroamella" target="_blank" class="hover:text-blue-300 transition">
+              <i class="fab fa-github w-5"></i>
+              github.com/alessandroamella
+            </a>
+            <a href="https://www.linkedin.com/in/alessandro-amella" target="_blank"
+              class="hover:text-blue-300 transition print:text-white">
+              <i class="fab fa-linkedin w-5"></i>
+              linkedin.com/in/alessandro-amella
+            </a>
+            <a href="tel:{{PHONE_TEL}}" class="hover:text-blue-300 transition">
+              <i class="fas fa-phone w-5"></i>
+              {{PHONE}}
+            </a>
+            <div class="text-gray-400 print:text-gray-200">
+              <i class="fas fa-map-marker-alt w-5"></i>
+              Aarhus, Denmark
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-3 gap-8 print:grid-cols-3 print:gap-6">
+        <div class="md:col-span-2 print:col-span-2 space-y-6 print:space-y-5">
+          <section>
+            <h2 class="text-lg font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider">
+              Profile
+            </h2>
+            <p class="text-xs text-gray-600 leading-relaxed text-justify">
+              Full-stack developer from Modena, based in Aarhus. I've worked as a freelancer with
+              startups and companies, designing and building web applications, e-commerce platforms and SaaS products,
+              from architecture definition to
+              production deployment. I work mainly in the TypeScript ecosystem (NestJS, React,
+              PostgreSQL), and also handle AI and LLM integrations, payments and third-party APIs,
+              cloud infrastructure and process automation. Now doing an MSc in Computer Science (AI) at
+              Aarhus University.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-lg font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
+              Work Experience
+            </h2>
+
+            <div class="space-y-4">
+              <div class="relative pl-4 border-l-2 border-blue-500">
+                <h3 class="text-sm font-bold text-gray-800">Freelance Developer</h3>
+                <div class="text-blue-600 font-semibold text-xs mb-1">
+                  March 2024 - Present
+                </div>
+                <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                  <li>
+                    Developed and maintain
+                    <a href="https://www.qrami.it/" target="_blank" class="text-blue-600 hover:underline">Qrami</a>, a
+                    telemedicine platform for video and home visits: backend, frontend and
+                    infrastructure (page 2).
+                  </li>
+                  <li>
+                    Built the backend and LLM layer of JAnus, a chat-driven AI accounting tool for
+                    freelancers (page 2).
+                  </li>
+                  <li>
+                    Built "C'&egrave; Sciopero?", a public service about upcoming transport strikes in Italy,
+                    and my BSc thesis case study: scrapers feed a NestJS LLM parser through RabbitMQ,
+                    with React web and React Native mobile apps on top.
+                  </li>
+                  <li>
+                    Developed and maintained
+                    <a href="https://bamboosim.com/" target="_blank"
+                      class="text-blue-600 hover:underline">BambooSIM</a>, a consumer e-commerce platform for travel
+                    eSIMs, with automatic provisioning after
+                    checkout, multiple payment providers, coupons, a custom CMS and self-service
+                    top-ups and refunds. Rated 4.6/5 on Trustpilot.
+                  </li>
+                  <li>
+                    Designed, built and maintained VHF e Superiori, where amateur radio operators across
+                    Europe join contests and log their contacts. Also built an industrial IoT telemetry
+                    platform.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="relative pl-4 border-l-2 border-gray-300">
+                <h3 class="text-sm font-bold text-gray-800">
+                  Software Engineer
+                  <span class="font-normal text-gray-500">&middot; Fertec</span>
+                </h3>
+                <div class="text-gray-400 text-xs mb-1">March 2023 - July 2023</div>
+                <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                  <li>
+                    Built the Node.js backend and Docker setup of a microservices system for an
+                    oxygenator production plant, alongside some legacy C#/.NET services.
+                  </li>
+                  <li>
+                    Flutter app, with native Java additions for Android, for interfacing with medical
+                    devices used in eye scans.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="relative pl-4 border-l-2 border-gray-300">
+                <h3 class="text-sm font-bold text-gray-800">
+                  Software Programmer, internship
+                  <span class="font-normal text-gray-500">&middot; SETA S.p.A.</span>
+                </h3>
+                <div class="text-gray-400 text-xs mb-1">September 2021 - October 2021</div>
+                <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                  <li>
+                    Built the Node.js/Electron app that generates the audio announcements played across SETA's
+                    entire fleet of about 900 buses (in the provinces of Modena, Reggio Emilia
+                    and Piacenza).
+                  </li>
+                  <li>
+                    Trained an ML model in Python for passenger counting from onboard camera feeds.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="relative pl-4 border-l-2 border-gray-300">
+                <h3 class="text-sm font-bold text-gray-800">
+                  Systems Engineer, internship
+                  <span class="font-normal text-gray-500">&middot; Infolog S.r.l.</span>
+                </h3>
+                <div class="text-gray-400 text-xs mb-1">July 2021 - August 2021</div>
+                <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                  <li>
+                    Implementation of two-factor authentication systems on Linux systems, development of a warehouse
+                    management web
+                    application in Java (WildFly), and designed and refactored its Microsoft SQL Server database.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="space-y-4 print:space-y-4">
+          <section>
+            <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider">
+              Education
+            </h2>
+
+            <div class="space-y-2">
               <div>
-                <h1 class="text-3xl font-bold tracking-tight mb-1">Alessandro Amella</h1>
-                <p class="text-lg text-gray-300 font-medium">
-                  Full-Stack Developer
+                <h4 class="font-bold text-gray-800 text-sm">MSc Computer Science</h4>
+                <p class="text-xs text-gray-600">Artificial Intelligence specialisation</p>
+                <p class="text-xs text-gray-600">
+                  Aarhus University
+                  <span class="text-gray-500">&middot; 2026 - 2028</span>
                 </p>
-                <div class="mt-1 text-xs text-gray-300">
-                  Portfolio:
-                  <a
-                    href="https://www.amella.it"
-                    target="_blank"
-                    class="font-semibold hover:text-blue-300 transition"
-                  >
-                    www.amella.it
+              </div>
+
+              <div>
+                <h4 class="font-bold text-gray-800 text-sm">BSc Computer Science</h4>
+                <p class="text-xs text-gray-600">
+                  University of Bologna
+                  <span class="text-gray-500">&middot; March 2026 &middot; 104/110</span>
+                </p>
+              </div>
+
+              <div>
+                <h4 class="font-bold text-gray-800 text-sm">Erasmus+ Exchange</h4>
+                <p class="text-xs text-gray-600">
+                  Brno University of Technology (CZ)
+                  <span class="text-gray-500">&middot; Jan - Jun 2024</span>
+                </p>
+              </div>
+
+              <div>
+                <h4 class="font-bold text-gray-800 text-sm">Diploma in Telecommunications</h4>
+                <p class="text-xs text-gray-600">
+                  I.T.I.S. E. Fermi, Modena
+                  <span class="text-gray-500">&middot; 2022</span>
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider">
+              Availability
+            </h2>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              Based in Aarhus, available immediately for 15-20 hours/week, as a part-time employee
+              or as a contractor. EU citizen, no work permit needed.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider">
+              Tech Stack
+            </h2>
+
+            <dl class="space-y-1 text-xs text-gray-600">
+              <div>
+                <dt class="font-semibold text-gray-700">Languages</dt>
+                <dd class="leading-relaxed">
+                  TypeScript &middot; Python &middot; C++ &middot; SQL
+                </dd>
+              </div>
+              <div>
+                <dt class="font-semibold text-gray-700">Backend</dt>
+                <dd class="leading-relaxed">
+                  Node.js &middot; NestJS &middot; Express &middot; Prisma &middot; REST &middot;
+                  OpenAPI
+                </dd>
+              </div>
+              <div>
+                <dt class="font-semibold text-gray-700">Frontend &amp; Mobile</dt>
+                <dd class="leading-relaxed">
+                  React &middot; Next.js &middot; React Native &middot; Flutter
+                </dd>
+              </div>
+              <div>
+                <dt class="font-semibold text-gray-700">Data</dt>
+                <dd class="leading-relaxed">
+                  PostgreSQL &middot; TimescaleDB &middot; PostGIS &middot; MongoDB &middot; Redis
+                  &middot; RabbitMQ
+                </dd>
+              </div>
+              <div>
+                <dt class="font-semibold text-gray-700">Integrations</dt>
+                <dd class="leading-relaxed">
+                  LLMs (responses, function calling, structured output, RAG) &middot; payment gateways
+                  &middot; web scraping &middot; third-party REST APIs
+                </dd>
+              </div>
+              <div>
+                <dt class="font-semibold text-gray-700">Cloud &amp; DevOps</dt>
+                <dd class="leading-relaxed">
+                  Docker &middot; Linux &middot; AWS &middot; Google Cloud &middot; CI/CD
+                </dd>
+              </div>
+            </dl>
+          </section>
+
+          <section>
+            <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider">
+              Languages
+            </h2>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              Italian
+              <strong class="text-gray-800">native</strong>
+              &middot; English
+              <strong class="text-gray-800">C1</strong>
+              &middot; Danish
+              <strong class="text-gray-800">A1</strong>
+            </p>
+          </section>
+        </div>
+      </main>
+      <footer
+        class="hidden print:flex print:mt-auto print:items-center print:justify-between print:border-t print:border-gray-200 print:px-8 print:pt-2 print:pb-4 print:text-[10px] print:text-gray-500">
+        <span class="font-bold text-gray-800">Alessandro Amella</span>
+        <span>www.amella.it &middot; alessandro@amella.it &middot; {{PHONE}}</span>
+        <span>Page 1 of 2</span>
+      </footer>
+    </div>
+
+    <!-- ============================ SHEET 2 ============================ -->
+    <div class="sheet">
+      <main class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-3 gap-8 print:grid-cols-3 print:gap-6">
+        <div class="md:col-span-2 print:col-span-2">
+          <section>
+            <h2 class="text-lg font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider">
+              Selected Projects &amp; Research
+            </h2>
+
+            <div class="space-y-4">
+              <div class="relative pl-4 border-l-2 border-blue-500">
+                <h3 class="text-sm font-bold text-gray-800">
+                  <a href="https://amslaurea.unibo.it/id/eprint/39074/" target="_blank"
+                    class="hover:text-blue-600 transition">
+                    Web Scraping and LLMs: Comparing Methodologies for Extracting Unstructured Data
+                  </a>
+                  <span class="font-normal text-gray-500">&middot; BSc thesis</span>
+                </h3>
+                <div class="text-blue-600 font-semibold text-xs mb-1">
+                  Solo project &middot; University of Bologna &middot;
+                  <a href="https://amslaurea.unibo.it/id/eprint/39074/1/tesi.pdf" target="_blank"
+                    class="text-blue-600 hover:underline">
+                    <i class="fas fa-file-pdf"></i>
+                    Thesis (Italian &middot; PDF)
                   </a>
                 </div>
+                <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                  <li>
+                    Built SWEET (Semantic Web Extraction &amp; Evaluation Tool), a benchmarking
+                    framework comparing LLM-based extraction with classic rule-based scraping on a
+                    real case (Italian transport strike notices), across GPT, Gemini, Llama and
+                    DeepSeek, over more than 30,000 test runs.
+                  </li>
+                  <li>
+                    Compared ways of cleaning unstructured HTML before it reaches the model, from raw
+                    and cleaned HTML to Markdown conversion and purpose-built small language models
+                    (Jina Reader, Dripper). DOM pre-filtering plus Markdown cut input tokens
+                    by 99.5% while keeping extraction accuracy (measured by F1 score) above 0.95.
+                  </li>
+                  <li>
+                    Compared output validation schemes, finding that a flexible output normalised
+                    downstream in code, rather than a strict JSON schema, cut hallucinations by up to
+                    45%.
+                  </li>
+                  <li>
+                    DOM-alteration tests on how LLM extraction and classic scrapers hold up
+                    when the page structure changes.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="relative pl-4 border-l-2 border-gray-300">
+                <h3 class="text-sm font-bold text-gray-800">
+                  JAnus &middot; AI Accounting Engine
+                </h3>
+                <div class="text-gray-500 font-semibold text-xs mb-1">
+                  Freelance client project
+                </div>
+                <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                  <li>
+                    Built the backend of a double-entry accounting engine for Italian VAT-registered
+                    freelancers: invoicing, VAT, payment schedules, cash flow and depreciation, with
+                    NestJS and Prisma on PostgreSQL in an Nx monorepo.
+                  </li>
+                  <li>
+                    Built the LLM layer that drives the whole system from a chat, with function
+                    calling and structured output, turning plain-language requests into accounting
+                    operations. RAG is used to retrieve the information from the client's own invoices and receipts.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="relative pl-4 border-l-2 border-gray-300">
+                <h3 class="text-sm font-bold text-gray-800">
+                  <a href="https://www.qrami.it/" target="_blank" class="hover:text-blue-600 transition">
+                    Qrami &middot; Telemedicine Platform
+                  </a>
+                </h3>
+                <div class="text-gray-500 font-semibold text-xs mb-1">
+                  Freelance client project &middot;
+                  <a href="https://www.qrami.it/" target="_blank" class="text-blue-600 hover:underline">
+                    <i class="fas fa-globe"></i>
+                    qrami.it
+                  </a>
+                </div>
+                <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                  <li>
+                    SaaS product that simplifies traditional healthcare, letting patients find a doctor,
+                    have an online or in-person visit, and receive the medical report and receipt on
+                    the same platform, automatically.
+                  </li>
+                  <li>
+                    Video calls through the Daily.co API, patient payments and doctor payouts with
+                    Stripe Connect, BullMQ job queues, S3 storage, DOCX and PDF generation, and
+                    automated CI/CD.
+                  </li>
+                  <li>
+                    Admin dashboard over the whole system with a full audit log, role-based access
+                    per user type, and GDPR handling for the health data involved. NestJS, Prisma,
+                    PostgreSQL with PostGIS, TanStack Start, on Google Cloud Run.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="relative pl-4 border-l-2 border-gray-300">
+                <h3 class="text-sm font-bold text-gray-800">
+                  Industrial IoT Platform &middot; Time-Series Telemetry
+                </h3>
+                <div class="text-gray-500 font-semibold text-xs mb-1">
+                  Freelance client project
+                </div>
+                <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
+                  <li>
+                    NestJS API gateway over Eclipse Kapua for remote management and monitoring of
+                    35 machines across 12 industrial sites. Dockerised, with automated staging releases driven by
+                    GitHub Actions and Google Cloud Run.
+                  </li>
+                  <li>
+                    Designed the telemetry store on PostgreSQL with TimescaleDB, using
+                    hypertables, native compression, continuous aggregates and retention policies
+                    to keep high-frequency sensor data queryable at a low cost.
+                  </li>
+                </ul>
               </div>
             </div>
+          </section>
+        </div>
 
-            <div class="flex flex-col gap-1 text-xs sm:text-right">
-              <a href="mailto:alessandro@amella.it" class="hover:text-blue-300 transition">
-                <i class="fas fa-envelope w-5"></i>
-                alessandro@amella.it
+        <div class="space-y-4">
+          <section>
+            <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider">
+              Volunteering
+            </h2>
+            <h4 class="font-bold text-gray-800 text-sm">Kin&oacute; Caf&eacute; &middot; Manager &amp; developer</h4>
+            <p class="text-xs text-gray-500 mb-1">
+              December 2024 - June 2025 &middot;
+              <a href="https://github.com/alessandroamella/kino-manager" target="_blank"
+                class="text-blue-600 hover:underline whitespace-nowrap">
+                <i class="fab fa-github"></i>
+                GitHub
               </a>
-              <a
-                href="https://github.com/alessandroamella"
-                target="_blank"
-                class="hover:text-blue-300 transition"
-              >
-                <i class="fab fa-github w-5"></i>
-                github.com/alessandroamella
+            </p>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              Ran a volunteer-run caf&eacute; in San Cesario sul Panaro and built its management
+              system for its 65 members, with online sign-up and digital signature, QR check-in, and a till that
+              drives an ESP32 customer display over Web Serial and prints receipts on a thermal
+              printer through a Python client. NestJS, PostgreSQL, React.
+            </p>
+
+            <h4 class="font-bold text-gray-800 text-sm mt-3">
+              ESN Modena e Reggio Emilia &middot; Board Supporter (Webmaster)
+            </h4>
+            <p class="text-xs text-gray-500 mb-1">
+              September 2025 - October 2026 &middot;
+              <a href="https://more.esn.it/" target="_blank" class="text-blue-600 hover:underline">
+                more.esn.it
               </a>
-              <a
-                href="https://www.linkedin.com/in/alessandro-amella"
-                target="_blank"
-                class="hover:text-blue-300 transition print:text-white"
-              >
-                <i class="fab fa-linkedin w-5"></i>
-                linkedin.com/in/alessandro-amella
-              </a>
-              <a href="tel:{{PHONE_TEL}}" class="hover:text-blue-300 transition">
-                <i class="fas fa-phone w-5"></i>
-                {{PHONE}}
-              </a>
-              <div class="text-gray-400 print:text-gray-200">
-                <i class="fas fa-map-marker-alt w-5"></i>
-                Aarhus, Denmark
-              </div>
-            </div>
-          </div>
-        </header>
+            </p>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              Maintained the section's Drupal website and built an internal tool that automates
+              new-member management. Organized events for incoming Erasmus students and handled
+              member payments and ESNcard renewals. Before that, volunteer staff at ESN Bologna
+              (2024 - 2025).
+            </p>
+          </section>
 
-        <main
-          class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-3 gap-8 print:grid-cols-3 print:gap-6"
-        >
-          <div class="md:col-span-2 print:col-span-2 space-y-6 print:space-y-5">
-            <section>
-              <h2
-                class="text-lg font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider"
-              >
-                Profile
-              </h2>
-              <p class="text-xs text-gray-600 leading-relaxed text-justify">
-                Full-stack developer from Modena, based in Aarhus. I've worked as a freelancer with
-                startups and companies, designing and building web applications, e-commerce platforms and SaaS products, from architecture definition to
-                production deployment. I work mainly in the TypeScript ecosystem (NestJS, React,
-                PostgreSQL), and also handle AI and LLM integrations, payments and third-party APIs,
-                cloud infrastructure and process automation. Now doing an MSc in Computer Science (AI) at
-                Aarhus University.
-              </p>
-            </section>
-
-            <section>
-              <h2
-                class="text-lg font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider"
-              >
-                Work Experience
-              </h2>
-
-              <div class="space-y-4">
-                <div class="relative pl-4 border-l-2 border-blue-500">
-                  <h3 class="text-sm font-bold text-gray-800">Freelance Developer</h3>
-                  <div class="text-blue-600 font-semibold text-xs mb-1">
-                    March 2024 - Present
-                  </div>
-                  <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
-                    <li>
-                      Developed and maintain
-                      <a href="https://www.qrami.it/" target="_blank" class="text-blue-600 hover:underline"
-                        >Qrami</a
-                      >, a telemedicine platform for video and home visits: backend, frontend and
-                      infrastructure (page 2).
-                    </li>
-                    <li>
-                      Built the backend and LLM layer of JAnus, a chat-driven AI accounting tool for
-                      freelancers (page 2).
-                    </li>
-                    <li>
-                      Built "C'&egrave; Sciopero?", a public service about upcoming transport strikes in Italy,
-                      and my BSc thesis case study: scrapers feed a NestJS LLM parser through RabbitMQ,
-                      with React web and React Native mobile apps on top.
-                    </li>
-                    <li>
-                      Developed and maintained
-                      <a
-                        href="https://bamboosim.com/"
-                        target="_blank"
-                        class="text-blue-600 hover:underline"
-                        >BambooSIM</a
-                      >, a consumer e-commerce platform for travel eSIMs, with automatic provisioning after
-                      checkout, multiple payment providers, coupons, a custom CMS and self-service
-                      top-ups and refunds. Rated 4.6/5 on Trustpilot.
-                    </li>
-                    <li>
-                      Designed, built and maintained VHF e Superiori, where amateur radio operators across
-                      Europe join contests and log their contacts. Also built an industrial IoT telemetry
-                      platform.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="relative pl-4 border-l-2 border-gray-300">
-                  <h3 class="text-sm font-bold text-gray-800">
-                    Web Programmer
-                    <span class="font-normal text-gray-500">&middot; Fertec</span>
-                  </h3>
-                  <div class="text-gray-400 text-xs mb-1">March 2023 - July 2023</div>
-                  <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
-                    <li>
-                      Built the Node.js backend and Docker setup of a microservices system for an
-                      oxygenator production plant, alongside some legacy C#/.NET services.
-                    </li>
-                    <li>
-                      Flutter app, with native Java additions for Android, for interfacing with medical
-                      devices used in eye scans.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="relative pl-4 border-l-2 border-gray-300">
-                  <h3 class="text-sm font-bold text-gray-800">
-                    Software Programmer, internship
-                    <span class="font-normal text-gray-500">&middot; SETA S.p.A.</span>
-                  </h3>
-                  <div class="text-gray-400 text-xs mb-1">September 2021 - October 2021</div>
-                  <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
-                    <li>
-                      Built the Node.js/Electron app that generates the audio announcements played across SETA's
-                      entire fleet of about 900 buses (in the provinces of Modena, Reggio Emilia
-                      and Piacenza).
-                    </li>
-                    <li>
-                      Trained an ML model in Python for passenger counting from onboard camera feeds.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="relative pl-4 border-l-2 border-gray-300">
-                  <h3 class="text-sm font-bold text-gray-800">
-                    Systems Engineer, internship
-                    <span class="font-normal text-gray-500">&middot; Infolog S.r.l.</span>
-                  </h3>
-                  <div class="text-gray-400 text-xs mb-1">June 2021 - July 2021</div>
-                  <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
-                    <li>
-                      Helped build a warehouse management web application in Java (WildFly), and designed
-                      and refactored its Microsoft SQL Server database.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-          </div>
-
-          <div class="space-y-4 print:space-y-4">
-            <section>
-              <h2
-                class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider"
-              >
-                Education
-              </h2>
-
-              <div class="space-y-2">
-                <div>
-                  <h4 class="font-bold text-gray-800 text-sm">MSc Computer Science</h4>
-                  <p class="text-xs text-gray-600">Artificial Intelligence specialisation</p>
-                  <p class="text-xs text-gray-600">
-                    Aarhus University
-                    <span class="text-gray-500">&middot; 2026 - 2028</span>
-                  </p>
-                </div>
-
-                <div>
-                  <h4 class="font-bold text-gray-800 text-sm">BSc Computer Science</h4>
-                  <p class="text-xs text-gray-600">
-                    University of Bologna
-                    <span class="text-gray-500">&middot; March 2026 &middot; 104/110</span>
-                  </p>
-                </div>
-
-                <div>
-                  <h4 class="font-bold text-gray-800 text-sm">Erasmus+ Exchange</h4>
-                  <p class="text-xs text-gray-600">
-                    Brno University of Technology (CZ)
-                    <span class="text-gray-500">&middot; Jan - Jun 2024</span>
-                  </p>
-                </div>
-
-                <div>
-                  <h4 class="font-bold text-gray-800 text-sm">Diploma in Telecommunications</h4>
-                  <p class="text-xs text-gray-600">
-                    I.T.I.S. E. Fermi, Modena
-                    <span class="text-gray-500">&middot; 2022</span>
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h2
-                class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider"
-              >
-                Availability
-              </h2>
-              <p class="text-xs text-gray-600 leading-relaxed">
-                Based in Aarhus, available immediately for 15-20 hours/week, as a part-time employee
-                or as a contractor. EU citizen, no work permit needed.
-              </p>
-            </section>
-
-            <section>
-              <h2
-                class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider"
-              >
-                Tech Stack
-              </h2>
-
-              <dl class="space-y-1 text-xs text-gray-600">
-                <div>
-                  <dt class="font-semibold text-gray-700">Languages</dt>
-                  <dd class="leading-relaxed">
-                    TypeScript &middot; Python &middot; C++ &middot; SQL
-                  </dd>
-                </div>
-                <div>
-                  <dt class="font-semibold text-gray-700">Backend</dt>
-                  <dd class="leading-relaxed">
-                    Node.js &middot; NestJS &middot; Express &middot; Prisma &middot; REST &middot;
-                    OpenAPI
-                  </dd>
-                </div>
-                <div>
-                  <dt class="font-semibold text-gray-700">Frontend &amp; Mobile</dt>
-                  <dd class="leading-relaxed">
-                    React &middot; Next.js &middot; React Native &middot; Flutter
-                  </dd>
-                </div>
-                <div>
-                  <dt class="font-semibold text-gray-700">Data</dt>
-                  <dd class="leading-relaxed">
-                    PostgreSQL &middot; TimescaleDB &middot; PostGIS &middot; MongoDB &middot; Redis
-                    &middot; RabbitMQ
-                  </dd>
-                </div>
-                <div>
-                  <dt class="font-semibold text-gray-700">Integrations</dt>
-                  <dd class="leading-relaxed">
-                    LLMs (responses, function calling, structured output, RAG) &middot; payment gateways
-                    &middot; web scraping &middot; third-party REST APIs
-                  </dd>
-                </div>
-                <div>
-                  <dt class="font-semibold text-gray-700">Cloud &amp; DevOps</dt>
-                  <dd class="leading-relaxed">
-                    Docker &middot; Linux &middot; AWS &middot; Google Cloud &middot; CI/CD
-                  </dd>
-                </div>
-              </dl>
-            </section>
-
-            <section>
-              <h2
-                class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider"
-              >
-                Languages
-              </h2>
-              <p class="text-xs text-gray-600 leading-relaxed">
-                Italian
-                <strong class="text-gray-800">native</strong>
-                &middot; English
-                <strong class="text-gray-800">C1</strong>
-                &middot; Danish
-                <strong class="text-gray-800">A1</strong>
-              </p>
-            </section>
-          </div>
-        </main>
-        <footer
-          class="hidden print:flex print:mt-auto print:items-center print:justify-between print:border-t print:border-gray-200 print:px-8 print:pt-2 print:pb-4 print:text-[10px] print:text-gray-500"
-        >
-          <span class="font-bold text-gray-800">Alessandro Amella</span>
-          <span>www.amella.it &middot; alessandro@amella.it &middot; {{PHONE}}</span>
-          <span>Page 1 of 2</span>
-        </footer>
-      </div>
-
-      <!-- ============================ SHEET 2 ============================ -->
-      <div class="sheet">
-        <main
-          class="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-3 gap-8 print:grid-cols-3 print:gap-6"
-        >
-          <div class="md:col-span-2 print:col-span-2">
-            <section>
-              <h2
-                class="text-lg font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-3 uppercase tracking-wider"
-              >
-                Selected Projects &amp; Research
-              </h2>
-
-              <div class="space-y-4">
-                <div class="relative pl-4 border-l-2 border-blue-500">
-                  <h3 class="text-sm font-bold text-gray-800">
-                    <a
-                      href="https://amslaurea.unibo.it/id/eprint/39074/"
-                      target="_blank"
-                      class="hover:text-blue-600 transition"
-                    >
-                      Web Scraping and LLMs: Comparing Methodologies for Extracting Unstructured Data
-                    </a>
-                    <span class="font-normal text-gray-500">&middot; BSc thesis</span>
-                  </h3>
-                  <div class="text-blue-600 font-semibold text-xs mb-1">
-                    Solo project &middot; University of Bologna &middot;
-                    <a
-                      href="https://amslaurea.unibo.it/id/eprint/39074/1/tesi.pdf"
-                      target="_blank"
-                      class="text-blue-600 hover:underline"
-                    >
-                      <i class="fas fa-file-pdf"></i>
-                      Thesis (Italian &middot; PDF)
-                    </a>
-                  </div>
-                  <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
-                    <li>
-                      Built SWEET (Semantic Web Extraction &amp; Evaluation Tool), a benchmarking
-                      framework comparing LLM-based extraction with classic rule-based scraping on a
-                      real case (Italian transport strike notices), across GPT, Gemini, Llama and
-                      DeepSeek, over more than 30,000 test runs.
-                    </li>
-                    <li>
-                      Compared ways of cleaning unstructured HTML before it reaches the model, from raw
-                      and cleaned HTML to Markdown conversion and purpose-built small language models
-                      (Jina Reader, Dripper). DOM pre-filtering plus Markdown cut input tokens
-                      by 99.5% while keeping extraction accuracy (measured by F1 score) above 0.95.
-                    </li>
-                    <li>
-                      Compared output validation schemes, finding that a flexible output normalised
-                      downstream in code, rather than a strict JSON schema, cut hallucinations by up to
-                      45%.
-                    </li>
-                    <li>
-                      DOM-alteration tests on how LLM extraction and classic scrapers hold up
-                      when the page structure changes.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="relative pl-4 border-l-2 border-gray-300">
-                  <h3 class="text-sm font-bold text-gray-800">
-                    JAnus &middot; AI Accounting Engine
-                  </h3>
-                  <div class="text-gray-500 font-semibold text-xs mb-1">
-                    Freelance client project
-                  </div>
-                  <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
-                    <li>
-                      Built the backend of a double-entry accounting engine for Italian VAT-registered
-                      freelancers: invoicing, VAT, payment schedules, cash flow and depreciation, with
-                      NestJS and Prisma on PostgreSQL in an Nx monorepo.
-                    </li>
-                    <li>
-                      Built the LLM layer that drives the whole system from a chat, with function
-                      calling and structured output, turning plain-language requests into accounting
-                      operations. RAG is used to retrieve the information from the client's own invoices and receipts.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="relative pl-4 border-l-2 border-gray-300">
-                  <h3 class="text-sm font-bold text-gray-800">
-                    <a href="https://www.qrami.it/" target="_blank" class="hover:text-blue-600 transition">
-                      Qrami &middot; Telemedicine Platform
-                    </a>
-                  </h3>
-                  <div class="text-gray-500 font-semibold text-xs mb-1">
-                    Freelance client project &middot;
-                    <a href="https://www.qrami.it/" target="_blank" class="text-blue-600 hover:underline">
-                      <i class="fas fa-globe"></i>
-                      qrami.it
-                    </a>
-                  </div>
-                  <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
-                    <li>
-                      SaaS product that simplifies traditional healthcare, letting patients find a doctor,
-                      have an online or in-person visit, and receive the medical report and receipt on
-                      the same platform, automatically.
-                    </li>
-                    <li>
-                      Video calls through the Daily.co API, patient payments and doctor payouts with
-                      Stripe Connect, BullMQ job queues, S3 storage, DOCX and PDF generation, and
-                      automated CI/CD.
-                    </li>
-                    <li>
-                      Admin dashboard over the whole system with a full audit log, role-based access
-                      per user type, and GDPR handling for the health data involved. NestJS, Prisma,
-                      PostgreSQL with PostGIS, TanStack Start, on Google Cloud Run.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="relative pl-4 border-l-2 border-gray-300">
-                  <h3 class="text-sm font-bold text-gray-800">
-                    Industrial IoT Platform &middot; Time-Series Telemetry
-                  </h3>
-                  <div class="text-gray-500 font-semibold text-xs mb-1">
-                    Freelance client project
-                  </div>
-                  <ul class="list-disc list-outside ml-4 text-gray-600 space-y-1 text-xs">
-                    <li>
-                      NestJS API gateway over Eclipse Kapua for remote management and monitoring of
-                      35 machines across 12 industrial sites. Dockerised, with automated staging releases driven by
-                      a webhook and PM2.
-                    </li>
-                    <li>
-                      Designed the telemetry store on PostgreSQL with TimescaleDB, using
-                      hypertables, native compression, continuous aggregates and retention policies
-                      to keep high-frequency sensor data queryable at a low cost.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-          </div>
-
-          <div class="space-y-4">
-            <section>
-              <h2
-                class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider"
-              >
-                Volunteering
-              </h2>
-              <h4 class="font-bold text-gray-800 text-sm">Kin&oacute; Caf&eacute; &middot; Manager &amp; developer</h4>
-              <p class="text-xs text-gray-500 mb-1">
-                December 2024 - June 2025 &middot;
-                <a
-                  href="https://github.com/alessandroamella/kino-manager"
-                  target="_blank"
-                  class="text-blue-600 hover:underline whitespace-nowrap"
-                >
-                  <i class="fab fa-github"></i>
-                  GitHub
-                </a>
-              </p>
-              <p class="text-xs text-gray-600 leading-relaxed">
-                Ran a volunteer-run caf&eacute; in San Cesario sul Panaro and built its management
-                system for its 65 members, with online sign-up and digital signature, QR check-in, and a till that
-                drives an ESP32 customer display over Web Serial and prints receipts on a thermal
-                printer through a Python client. NestJS, PostgreSQL, React.
-              </p>
-
-              <h4 class="font-bold text-gray-800 text-sm mt-3">
-                ESN Modena e Reggio Emilia &middot; Board Supporter (Webmaster)
-              </h4>
-              <p class="text-xs text-gray-500 mb-1">
-                September 2025 - October 2026 &middot;
-                <a href="https://more.esn.it/" target="_blank" class="text-blue-600 hover:underline">
-                  more.esn.it
-                </a>
-              </p>
-              <p class="text-xs text-gray-600 leading-relaxed">
-                Maintained the section's Drupal website and built an internal tool that automates
-                new-member management. Organized events for incoming Erasmus students and handled
-                member payments and ESNcard renewals. Before that, volunteer staff at ESN Bologna
-                (2024 - 2025).
-              </p>
-            </section>
-
-            <section>
-              <h2
-                class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider"
-              >
-                Interests
-              </h2>
-              <p class="text-xs text-gray-600 leading-relaxed">
-                Open source &middot; Amateur radio &amp; electronics (licensed, IU4QSG) &middot;
-                Public transport &amp; urban planning &middot; Aviation &amp; railways &middot;
-                Travelling (32 countries so far) &middot; Hardware/software interaction &amp;
-                microcontrollers
-              </p>
-            </section>
-          </div>
-          <p class="md:col-span-3 print:col-span-3 -mt-2 text-right text-[9px] text-gray-400">
-            <a href="https://github.com/alessandroamella/curriculum-vitae" class="underline">Source</a>
-            and
-            <a href="https://github.com/alessandroamella/curriculum-vitae/releases/latest/download/en-aarhus-student.pdf" class="underline">latest version</a>
-            of this CV on GitHub
-          </p>
-        </main>
-        <footer
-          class="hidden print:flex print:mt-auto print:items-center print:justify-between print:border-t print:border-gray-200 print:px-8 print:pt-2 print:pb-4 print:text-[10px] print:text-gray-500"
-        >
-          <span class="font-bold text-gray-800">Alessandro Amella</span>
-          <span>www.amella.it &middot; alessandro@amella.it &middot; {{PHONE}}</span>
-          <span>Page 2 of 2</span>
-        </footer>
-      </div>
+          <section>
+            <h2 class="text-base font-bold text-gray-800 border-b-2 border-gray-200 pb-1 mb-2 uppercase tracking-wider">
+              Interests
+            </h2>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              Open source &middot; Amateur radio &amp; electronics (licensed, IU4QSG) &middot;
+              Public transport &amp; urban planning &middot; Aviation &amp; railways &middot;
+              Travelling (32 countries so far) &middot; Hardware/software interaction &amp;
+              microcontrollers
+            </p>
+          </section>
+        </div>
+        <p class="md:col-span-3 print:col-span-3 -mt-2 text-right text-[9px] text-gray-400">
+          <a href="https://github.com/alessandroamella/curriculum-vitae" class="underline">Source</a>
+          and
+          <a href="https://github.com/alessandroamella/curriculum-vitae/releases/latest/download/en-aarhus-student.pdf"
+            class="underline">latest version</a>
+          of this CV on GitHub
+        </p>
+      </main>
+      <footer
+        class="hidden print:flex print:mt-auto print:items-center print:justify-between print:border-t print:border-gray-200 print:px-8 print:pt-2 print:pb-4 print:text-[10px] print:text-gray-500">
+        <span class="font-bold text-gray-800">Alessandro Amella</span>
+        <span>www.amella.it &middot; alessandro@amella.it &middot; {{PHONE}}</span>
+        <span>Page 2 of 2</span>
+      </footer>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
